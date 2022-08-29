@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Polígonos Inscritos</title>
+	<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	<link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+	<header>
+		<h1>Poligonos Inscritos</h1>
+		<nav>
+			<a href="home.html">Inicio</a>
+			<a href="cuadrado.html">El Problema del Cuadrado Inscrito</a>
+			<a href="rectangulos.html" class="actual">Rectángulos Inscritos</a>
+			<a href="triangulos.html">Triángulos Inscritos</a>
+			<a href="preguntasAbiertas.html">Preguntas Abiertas</a>
+		</nav>
+	</header>
+	<main>
+
+		<section>
+
+			<h2> Caracterización de rectángulos </h2>
+
+			<p> $\textbf{Lema. }$ Sean $A, B, C, D \in \mathbb{R}^2$. Si los segmentos $AB$ y $CD$ poseen el mismo punto medio $M$ y $|AM| = |CM|$ entonces $A, B, C$ y $D$ son los vértices de un rectángulo $R$</p>
+
+			<img src="imgs/img_rec_1.png" class = "lemaYpruebaVaughan">
+
+			<p> Sean $A, B, C, D, M, AB$ y $CD$ como en la figura superior.
+
+			Por hipótesis tenemos que $|AM| = |CM|$ y, como $M$ es punto medio de $AB$ y $CD$ se sigue que $|MD| = |MB|$ <br>
+
+			Por el criterio $LAL$, los tríangulos $\triangle CMA$ y $\triangle BDM$ son congruentes.
+			</p>
+
+			<img src="imgs/img_rec_2.png" class = "lemaYpruebaVaughan">
+
+
+			<p> Se sigue que $|CA| = |BD|$<br>
+			Por un argumento análogo tenemos que $|AD|=|CB|$</p>
+			<img src="imgs/img_rec_3.png" class = "lemaYpruebaVaughan">
+
+			<p>Observemos que <br>
+				\begin{equation*}
+					\begin{split}
+						\pi & = \alpha + 2\theta \\
+						\pi & = \beta + 2\gamma \\
+						\pi & =  \alpha + \beta
+					\end{split}
+				\end{equation*}
+				<br>
+				De las igualdades anteriores tenemos que:
+				\begin{equation*}
+					\begin{split}
+				2\pi = \alpha+\beta + 2(\theta + \gamma ) \Leftrightarrow \pi = 				2(\theta + \gamma)  \Leftrightarrow \theta + \gamma = 				\frac{\pi}{2}
+					\end{split}
+				\end{equation*}
+
+				De lo anterior tenemos que los ángulos $\angle CBD$ y $\angle DAC$ son rectos
+			</p>
+			<img src="imgs/img_rec_4.png" class = "lemaYpruebaVaughan">
+			<p> Lo que concluye la demostración del lema </p>
+
+		</section>
+	</main>
+</body>
+</html>

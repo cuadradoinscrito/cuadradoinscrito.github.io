@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Polígonos Inscritos</title>
+	<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	<link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+	<a href="Rectangulos.html" class="boton_regresar">Regresar</a>
+	<main>
+
+		<section>
+
+			<h2>Rectángulos Inscritos</h2>
+
+			<p>De manera completamente análoga al caso del cuadrado inscrito, podemos cuestionarnos si toda curva de Jordan en el plano euclideo inscribe un rectángulo. Para este caso en particular sabemos que sí es posible, a continuación se presenta la demostración a manos de H. Vaughan</p>
+
+		</section>
+
+		<section>
+
+			<h2> Demostración de Vaughan </h2>
+
+			<p> <strong>Teorema. </strong>  <em> Toda curva de Jordan $C$ $\in \mathbb{R}^2$ inscribe un rectángulo </em> </p> <br>
+
+			<p> Consideremos $\mathbb{R}^2$ y $\mathbb{R}^3$ con la topología usual </p>
+
+			<p> Antes de comenzar la demostración, debemos describir un rectángulo de manera conveniente. </p>
+
+			<p> $\textbf{Lema. }$ Sean $A, B, C, D \in \mathbb{R}^2$. Si los segmentos $AB$ y $CD$ poseen el mismo punto medio $M$ y $|AM| = |CM|$ entonces $A, B, C$ y $D$ son los vértices de un rectángulo $R$ <br>
+
+				Puede consultar la demostración de este lema <a href="lemaRec.html">aquí</a> <br>
+
+				Teniendo esto, podemos comenzar.
+			</p>
+
+
+			<p> Sea $C$ una curva de Jordan en $\mathbb{R}^3$
+				<br>
+			Para iniciar esta prueba, debemos definir un conjunto $M$ de la siguiente manera:
+
+			\[ M = \{\{x,y\}| x,y \in C \} \]
+
+			Ahora definamos la siguiente función $f: M \to \mathbb{R}^3$ de la siguiente manera:
+
+			\[f(\{x,y\})=(a,b, d(x,y))\]
+
+			Donde $(a,b)$ es el punto medio del segmento $xy$. <br>
+
+			Observemos que, para dos pares $\{u,v\}, \{x,y\} \in M$ distintos,  $f(\{u,v\}) = f(\{x,y\})$ si y si sólo si los puntos medios de los segmentos $uv$ y $xy$ son los mismos y $|uv|=|xy|$.<br>
+			Lo anterior, en conjunción con el lema uno implica que: <br>
+
+			$f$ <em> es no inyectiva si y sólo si existen cuatro puntos distintos en </em> $C$ <em> que conformen un rectángulo </em>
+			<br>
+			Dado lo anterior, resta exhibir que $f$ no es inyectiva. Para llegar a esa conclusión tenemos que analizar la estructura de $M$.
+			<br>
+
+			Primero estudiemos la siguiente estructura $M'$
+
+			\[M' = \{(x,y)| x, y \in C\}\]
+
+			Para visualizar la estructura de $M'$, podemos considerar un punto $\alpha \in C $ para realizar un "corte".
+			<br>
+			Sean $\alpha$ y $\alpha '$ los extremos del camino generado por este corte.
+			<br>
+			Identificando $\alpha$ y $\alpha '$, esto es $\alpha \sim \alpha '$ tendremos $C$
+			<br>
+			Ya que la figura obtenida al realizar el corte en $\alpha$ es un camino, éste es homotópico a segmentos de rectas sobre los ejes $X$ y $Y$, de manera que, preservando orientación, podemos considerar el siguiente diagrama:
+			</p>
+			<img src="imgs/img_rec_5.png" class = "lemaYpruebaVaughan">
+
+			<p>
+				La figura anterior es el polígono fundamental un <em> toro </em>, de modo que los puntos $(a,b) \in M'$ son puntos sobre un toro
+				<br>
+				Notemos que la principal diferencia entre $M$ y $M'$ es que, mientras que en $M'$ se cumple que $(a,b)\neq (b,a)$, en $M$ esto no es cierto, es decir $\{a,b\} = \{b,a\}$, de modo que, en la figura anterior, podemos "ignorar" los puntos sobre la identidad, es decir
+			</p>
+
+			<img src="imgs/img_rec_6.png" class = "lemaYpruebaVaughan">
+
+			<p> Para identificar los segmentos azules, realizamos un nuevo "corte" como en la siguente figura </p>
+
+			<img src="imgs/img_rec_7.png" class = "lemaYpruebaVaughan">
+
+			<p> De esta manera obtendremos las siguientes dos figuras: </p>
+
+			<img src="imgs/img_rec_8.png" class = "lemaYpruebaVaughan">
+
+
+			<img src="imgs/img_rec_9.png" class = "lemaYpruebaVaughan">
+
+			<p> Identificando las líneas azules tendremos el siguiente polígono fundamental: </p>
+
+			<img src="imgs/img_rec_10.png" class = "lemaYpruebaVaughan">
+
+			<p> El polígono anterior corresponde al polígono fundamental de una <em> banda de Möbius</em>, de esto se sigue que cada $\{a,b\} \in M$ es un punto sobre una banda de Möbius
+ 			<br>
+ 			Con esto en mente, podemos estudiar el comportamiento de $f(M)$.
+ 			<br>
+ 			Obervemos que $f(Fr(M))$ queda completamente contenida en el plano $XY$ pues $Fr(M)$ corresponde a las parejas $\{x,x\}$
+ 			<br>
+			Ahora supongamos que no existen cuatro puntos en $C$ que describan un rectángulo, por el lema, tenemos que $f$ es inyectiva.
+			<br>
+			Se sigue que $f$ es un encaje de la banda de Möbius en $\mathbb{R}^3$, lo que constituiría un $\textit{plano proyectivo}$ en $\mathbb{R}^3$, lo que es una contradicción.
+			</p>
+		</section>
+	</main>
+</body>
+</html>
