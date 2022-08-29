@@ -1,0 +1,190 @@
+body{
+	margin: 0%;
+}
+
+section{
+	margin: 3%;
+}
+
+header{
+	background-color: #C1C9D3;
+	padding: 1% 0% 0% 0%;
+}
+
+main{
+	padding: 2%;
+}
+
+h1{
+	text-align: center;
+	font-variant: small-caps;
+	font-size: 170%;
+}
+
+h2{
+	
+	font-size: 170%;
+}
+
+nav{
+	text-align: center;
+	padding: 5px;
+	background-color: #e32626;
+	border-top: solid 2px;
+	border-bottom: solid 2px;
+}
+
+nav a{
+	display: inline-block;
+	text-decoration: none;
+	border: solid 1px #FFFFFF;
+	padding: 5px;
+	margin: 0.1% 3% 0.1% 3%;
+	background-color: #FFC900;
+	font-size: 110%;
+	color: #000000;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-o-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+}
+
+nav a:hover{
+	background-color: #FFFFFF;
+}
+
+.actual{
+	background-color: #FFFFFF;
+}
+
+p{
+	text-align: justify;
+	font-family: sans-serif;
+	font-size: 120%;
+	line-height: 1.6;
+
+}
+
+footer{
+	background: #e32626;
+	padding: 1.3%;
+	border-top: solid 2px;
+	border-bottom: solid 2px;
+}
+
+#poweredByMJ{
+	display: inline-block;
+	float: right;
+}
+
+.boton_regresar{
+	background-color: #FFA20B;
+	padding: 2px;
+	border: solid 1px;
+	text-decoration: none;
+}
+
+#mHausd{
+	display: block;
+	width: 22%;
+	height: 22%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#fVaughan{
+	display: block;
+	width: 30%;
+	height: 30%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#continuosDel8{
+	display: block;
+	width: 50%;
+	height: 50%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#H4odo{
+	display: block;
+	width: 40%;
+	height: 40%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+.lemaYpruebaVaughan{
+	display: block;
+	width: 30%;
+	height: 30%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.centro{
+	display: block;
+	width: 16%;
+	height: 8%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.theorem{
+	font-weight: bold;
+}
+
+.tEquilatero{
+	display: block;
+	width: 40%;
+	height: 40%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.anim{
+	display: block;
+	width: 600px;
+	height: 400px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#geogebra_file{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.modelof2s1{
+	display: block;
+	width: 30%;
+	height: 30%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#banda2a{
+	display: inline-block;
+	width: 30%;
+	height: 30%;
+	margin-left: 20%;
+}
+
+#banda2b{
+	display: inline-block;
+	width: 30%;
+	height: 30%;
+	margin-right: 15%;
+	margin-left: 2%;
+}
+
+ol{
+	font-family: sans-serif;
+	font-size: 120%;
+	line-height: 1.6;
+}

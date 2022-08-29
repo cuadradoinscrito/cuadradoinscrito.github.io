@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Polígonos Inscritos</title>
+	<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	<link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+	<header>
+		<h1>Poligonos Inscritos</h1>
+		<nav>
+			<a href="home.html">Inicio</a>
+			<a href="cuadrado.html" class="actual">El Problema del Cuadrado Inscrito</a>
+			<a href="rectangulos.html">Rectángulos Inscritos</a>
+			<a href="triangulos.html">Triángulos Inscritos</a>
+			<a href="preguntasAbiertas.html">Preguntas Abiertas</a>
+		</nav>
+	</header>
+	<main>
+		<h2>El Problema del Cuadrado Inscrito</h2>
+
+		<p>		El $\textbf{problema del cuadrado inscrito}$ es una conjetura planteada en 1911 por Otto Toeplitz cuya prueba se mantiene como un problema abierto.<br>
+		<br> 
+		Concisamente, la conjetura consta de la siguiente pregunta:
+		\[\textit{¿Es posible inscribir un cuadrado en cualquier curva cerrada simple en el plano?}\]
+
+		O en términos formales, tendríamos: </p>
+
+		<p>	\[\textit{Toda curva de Jordan } \gamma \textit{ contiene cuatro puntos que son vértices de un cuadrado}\] <br></p>
+
+		<p> Es importante notar que, en esta página utilizaremos dos tipos de notaciones para la curvas de Jordan. <br>
+			Denotaremos a las curvas con $J$ cuando las consideremos como un subconjunto dado de $\mathbb{R}^2$ y con $\gamma$ cuando las consideremos como la imagen una función.
+		</p>
+
+		<p>	Observemos que no es necesario que el cuadrado esté contenido dentro de la curva, de lo contrario existen contraejemplos como el siguiente: $\textit{*contraejemplo*}$<br>
+
+		Es valioso mencionar que en una publicación de 1915, donde Arnold Emch trabaja una versión más débil de este problema, menciona que fue introducido a la conjetura gracias a Aubrey J. Kempner y que ignoraba el planteamiento de Toeplitz. A raíz de esto, existe la ambigüedad de quién fue la primera persona en plantear el problema del cuadrado inscrito, aunque se le suele atribuir a Toeplitz </p> <br>
+
+		<p>	A la fecha, se han presentado demostraciones a casos especiales de esta conjetura, esto es, para familias de curvas de Jordan que cumplen ciertas condiciones o criterios de "$\textit{suavidad}$". </p>
+		
+		<h2> Aproximaciones </h2>
+
+		<p> Al saber que existen demostraciones de la conjetura de Toeplitz para ciertas familias de curvas, es natural hacernos el siguiente planteamiento: </p>
+
+		<p>
+			<em> Sea $\{\gamma_i\}$ una sucesión de curvas suaves que inscriben un cuadrado y que aproximan a la curva de Jordan $\gamma$
+			</em> <br>
+			<br>
+			<em>¿Es posible hallar un cuadrado inscrito en la curva $\gamma$ dada la sucesión de cuadrados inducidos por la sucesión $\{\gamma_i\}$?</em> <br>
+			<br>
+			Desafortunadamente, la respuesta es no, pues la sucesión de cuadrados pseudo inscritos en $\gamma$ puede tender a un caso degenerado que colapse en un único punto.
+		</p>
+		<h2> Resultados publicados hasta ahora</h2>
+
+		<p>	A continuación presentaremos algunas demostraciones a familias específicas de curvas. </p>
+
+		<h2> Curvas convexas</h2>
+
+			<p>
+				Puede consultar una demostración de la conjetura de Toeplitz para curvas convexas en el siguiente <a href="curvasConvexas.html"> enlace </a>
+			</p>
+			
+		<h2>Curvas analíticas por partes</h2>
+
+			<p>Arnold Emch demostró en 1916 la conjetura de Toeplitz para curvas analíticas por partes que tienen una cantidad finita de puntos de inflexión.<br>
+			En el siguiente <a href="Emch.html"> enlace</a> puede consultar una idea intuitiva de la prueba de Emch </p> 
+		
+		<h2> Encajes localmente monótonos</h2>
+
+			<p> Stromquist demostró que todo encaje $\gamma : S^{1} \hookrightarrow \mathbb{R}^2$ localmente monótono inscribe un cuadrado <br>
+				Puede consultar una demostración de Stromquist en el siguiente <a href="stromquist.html"> enlace </a>
+			</p>
+		
+		<h2>Curvas simétricas </h2>
+
+			<p> Nielsen y Wright demostraron la conjetura de Toeplitz para curvas simétricas respecto a un punto o recta. <br>
+				Puede consultar el artículo original <a href="https://link.springer.com/article/10.1007/BF01263570"> aquí</a> y una demostración al caso en que $\gamma$ es simétrica respecto al origen <a href="curvasSimetricas.html"> aquí</a>
+			</p>
+			
+		<h2> Cuadriláteros </h2>
+
+			<p> En 1914, Hebbert demostró la conjetura de Toeplitz cuando $\gamma$ es un cuadrilátero en $\mathbb{R}^2$
+			</p>
+
+		<h2> Trapecios especiales </h2>
+
+			<p> La condición de <em> suavidad </em> más débil demostrada a la fecha es la de Matschke, quien demuestra la conjetura de Toeplitz para una curva $\gamma$ cuando existe una $\epsilon$ tal que  $ 0 < \epsilon < 2 \pi $ y $\gamma$ no contiene trapezoides especiales de tamaño $\epsilon$ <br>
+				Puede consultar su demostración <a href="https://refubium.fu-berlin.de/bitstream/handle/fub188/4121/thesis00.pdf?sequence=1&isAllowed=y"> aquí</a> 
+			</p>
+
+		<h2> Unión de gráficas de funciones Lipschitz continuas </h2>
+
+		<p> Uno de los resultados más recientes fue dado en el 2017 Terrence Tao, quien demuestra la conjetura de Toeplitz para la unión de las gráficas de dos funciones que son Lipschitz continuas. <br>
+			Puede consultar el artículo original, <em>An integration approach to the Toeplitz square peg problem</em> en el siguiente <a href="https://www.cambridge.org/core/journals/forum-of-mathematics-sigma/article/an-integration-approach-to-the-toeplitz-square-peg-problem/68DBDBA1E287FF36E74BFE1A656D3E03"> enlace </a>
+		</p>
+
+	</main>
+
+	<footer>
+		Copyright 2022
+		<a id = "poweredByMJ" href="https://www.mathjax.org">
+    		<img title="Powered by MathJax" id = "poweredByMJimg"
+    		src="https://www.mathjax.org/badge/badge.gif"
+    		border="0" alt="Powered by MathJax" />
+		</a>
+
+	</footer>
+</body>
+</html>
