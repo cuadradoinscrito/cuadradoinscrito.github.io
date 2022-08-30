@@ -1,2 +1,2 @@
-# Inscribiendo polígoos en objetos topológicos
+# Inscribiendo polígonos en objetos topológicos
 Sitio Web
