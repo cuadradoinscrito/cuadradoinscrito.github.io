@@ -19,94 +19,66 @@ MathJax = {
 	<a href="cuadrado.html" class="boton_regresar">Regresar</a>
 	
 	<main>
-		<section<!DOCTYPE html>
-			<html lang="es">
-			<head>
-				<meta charset="UTF-8">
-				<title>Polígonos Inscritos</title>
-				<script>
-			MathJax = {
-			  tex: {
-				inlineMath: [['$', '$'], ['\\(', '\\)']]
-			  }
-			};
-			</script>
-				<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-				<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-				<link rel="stylesheet" href="css/estilo.css">
-			</head>
-			
-			<body>
-				<a href="cuadrado.html" class="boton_regresar">Regresar</a>
-				
-				<main>
-					<section>
-					
-						<h2>Encajes localmente monótonos</h2>
-			
-							<p> 
-								Recordemos este planteamiento de la sección principal de la conjetura de Toeplitz
-							</p>
-			
-							<p> 
-								<em> Sea $\{\gamma_i\}$ una sucesión de curvas suaves que inscriben un cuadrado y que aproximan a la curva de Jordan $\gamma$
-								</em> 
-								<br>
-								<em>¿Es posible hallar un cuadrado inscrito en la curva $\gamma$ dada la sucesión de cuadrados inducidos por la sucesión $\{\gamma_i\}$?</em> <br>
-							</p>
-			
-							<p>
-								En tal sección argumentamos que no es posible hallar un cuadrado inscrito para la curva de Jordan $\gamma$ pues los cuadrados inscritos pueden colapsar a un punto <br>
-								Sin embargo, Stromquist demostró que estos cuadrados no colapsan si la sucesión $\{\gamma_i\}$ consta de curvas $C_1$ y $\gamma$ es un encaje localmente monótono. <br>
-								Sea $\gamma$ un encaje localmente monótono y $\epsilon > 0$, buscaremos aproximar dicho encaje con una sucesión de curvas $\{\gamma_\epsilon\}$ cuando $\epsilon \to 0$
-								
-							</p>
-							<p>
-								Para cada $\epsilon$ sea $\delta$ tal que $|x-y|< \delta$ implique que $||\gamma(x)-\gamma(y)||< \epsilon$ y que $\delta<\frac{1}{2}\mu$ para una $\mu >0$.<br>
-								Definimos cada $\gamma_\epsilon: \mathbb{R}\to \mathbb{R}^2$ como: 
-								\[\gamma_\epsilon(x)= \frac{1}{\delta} \int_{t=0}^{\delta} \gamma(x+t)dt\]
-			
-								Tenemos que $||\gamma_\epsilon (x) - \gamma (x)||<\epsilon$ pues, para toda $x$ se cumple que: 
-			
-								\[||\gamma_\epsilon(x) - \gamma(x)||= \left| \left|\frac{1}{\delta} \int_{t=0}^{\delta} \gamma(x+t)dt - \frac{1}{\delta} \int_{t=0}^{\delta} \gamma(x)dt \right| \right| \leq \frac{1}{\delta} \int_{t=0}^{\delta} ||\gamma_\epsilon (x) - \gamma (x)||< \epsilon\]
-			
-								Además, $\gamma_\epsilon$ tiene una derivada dada por: 
-			
-								\[\gamma_\epsilon'(x)=\frac{1}{\delta}(\gamma(x+\delta)- \gamma(x))\]
-							</p>
-			
-							<p>
-								Gracias a la monotoneidad local de $\gamma$, para $\epsilon$ suficientemente pequeñas tendremos que $\gamma_\epsilon$ es una curva $C_1$ <br>
-			
-								Puesto que las curvas $C_1$ inscriben cuadrados, consideraremos $S_\epsilon$ como el cuadrado inscrito en $\gamma_\epsilon$ cuyos vértices tienen el mismo orden cíclico en el cuadrado como en la curva. <br>
-			
-							</p>
-			
-							<p>
-								Ahora veremos que $\gamma_\epsilon$ es localmente monótona con constante $\frac{1}{2} \mu$. <br>
-								Sea $u(y)$ tal que $\gamma_{|(y-\mu, y+\mu)}$ es monótona en la dirección $u(y)$ y sean $x_1, x_2 \in (y-\mu, y+\mu)$ tales que $x_1< x_2$ <br>
-								Puesto que elegimos que $\gamma$ sea monótona en la dirección $u(y)$ se cumple que:
-			
-								\[(\gamma_\epsilon(x_2)-\gamma_\epsilon(x_1))\cdot u(y)=  \left( \frac{1}{\delta} \int_{t=0}^{\delta} (\gamma_\epsilon(x_2+t)-\gamma_\epsilon(x_1+t))dt\right ) \cdot u(y) >0\]
-								
-								Esto es, la monotoneidad de $\gamma$ obliga que la integral sea posiva. <br>
-								En consecuencia, la cuerda de $\gamma_\epsilon(x_1)$ a $\gamma_\epsilon(x_2)$ tiene un componente positivo en la dirección de $u(y)$.
-			
-							</p>
-			
-							<p>
-								Se sigue que el cuadrado inscrito $S_\epsilon$ debe tener un *<em>tamaño</em>* mayor a $\mu$, de lo contrario, sus vértices deberán estar contenidos en un segmento monótono de longitud $\mu$ en $\gamma_\epsilon$. 
-								Pero, por la *<em> observación</em>*, esto es una contradicción. <br>
-								Repitiendo este proceso para cada $\epsilon$, cuando $\epsilon \to 0$ tendremos un cuadrado $S$ de tamaño mayor a $\mu$ que esté inscrito en $\gamma$
-			
-							</p>
-					</section>
-				</main>
-			</body>
-			</html>>
+		<section>
 		
 			<h2>Encajes localmente monótonos</h2>
 
+				<p> 
+					Recordemos este planteamiento de la sección principal de la conjetura de Toeplitz
+				</p>
+
+				<p> 
+					<em> Sea $\{\gamma_i\}$ una sucesión de curvas suaves que inscriben un cuadrado y que aproximan a la curva de Jordan $\gamma$
+					</em> 
+					<br>
+					<em>¿Es posible hallar un cuadrado inscrito en la curva $\gamma$ dada la sucesión de cuadrados inducidos por la sucesión $\{\gamma_i\}$?</em> <br>
+				</p>
+
+				<p>
+					En tal sección argumentamos que no es posible hallar un cuadrado inscrito para la curva de Jordan $\gamma$ pues los cuadrados inscritos pueden colapsar a un punto <br>
+					Sin embargo, Stromquist demostró que estos cuadrados no colapsan si la sucesión $\{\gamma_i\}$ consta de curvas $C_1$ y $\gamma$ es un encaje localmente monótono. <br>
+					Sea $\gamma$ un encaje localmente monótono y $\epsilon > 0$, buscaremos aproximar dicho encaje con una sucesión de curvas $\{\gamma_\epsilon\}$ cuando $\epsilon \to 0$
+					
+				</p>
+				<p>
+					Para cada $\epsilon$ sea $\delta$ tal que $|x-y|< \delta$ implique que $||\gamma(x)-\gamma(y)||< \epsilon$ y que $\delta<\frac{1}{2}\mu$ para una $\mu >0$.<br>
+					Definimos cada $\gamma_\epsilon: \mathbb{R}\to \mathbb{R}^2$ como: 
+					\[\gamma_\epsilon(x)= \frac{1}{\delta} \int_{t=0}^{\delta} \gamma(x+t)dt\]
+
+					Tenemos que $||\gamma_\epsilon (x) - \gamma (x)||<\epsilon$ pues, para toda $x$ se cumple que: 
+
+					\[||\gamma_\epsilon(x) - \gamma(x)||= \left| \left|\frac{1}{\delta} \int_{t=0}^{\delta} \gamma(x+t)dt - \frac{1}{\delta} \int_{t=0}^{\delta} \gamma(x)dt \right| \right| \leq \frac{1}{\delta} \int_{t=0}^{\delta} ||\gamma_\epsilon (x) - \gamma (x)||< \epsilon\]
+
+					Además, $\gamma_\epsilon$ tiene una derivada dada por: 
+
+					\[\gamma_\epsilon'(x)=\frac{1}{\delta}(\gamma(x+\delta)- \gamma(x))\]
+				</p>
+
+				<p>
+					Gracias a la monotoneidad local de $\gamma$, para $\epsilon$ suficientemente pequeñas tendremos que $\gamma_\epsilon$ es una curva $C_1$ <br>
+
+					Puesto que las curvas $C_1$ inscriben cuadrados, consideraremos $S_\epsilon$ como el cuadrado inscrito en $\gamma_\epsilon$ cuyos vértices tienen el mismo orden cíclico en el cuadrado como en la curva. <br>
+
+				</p>
+
+				<p>
+					Ahora veremos que $\gamma_\epsilon$ es localmente monótona con constante $\frac{1}{2} \mu$. <br>
+					Sea $u(y)$ tal que $\gamma_{|(y-\mu, y+\mu)}$ es monótona en la dirección $u(y)$ y sean $x_1, x_2 \in (y-\mu, y+\mu)$ tales que $x_1< x_2$ <br>
+					Puesto que elegimos que $\gamma$ sea monótona en la dirección $u(y)$ se cumple que:
+
+					\[(\gamma_\epsilon(x_2)-\gamma_\epsilon(x_1))\cdot u(y)=  \left( \frac{1}{\delta} \int_{t=0}^{\delta} (\gamma_\epsilon(x_2+t)-\gamma_\epsilon(x_1+t))dt\right ) \cdot u(y) >0\]
+					
+					Esto es, la monotoneidad de $\gamma$ obliga que la integral sea posiva. <br>
+					En consecuencia, la cuerda de $\gamma_\epsilon(x_1)$ a $\gamma_\epsilon(x_2)$ tiene un componente positivo en la dirección de $u(y)$.
+
+				</p>
+
+				<p>
+					Se sigue que el cuadrado inscrito $S_\epsilon$ debe tener un *<em>tamaño</em>* mayor a $\mu$, de lo contrario, sus vértices deberán estar contenidos en un segmento monótono de longitud $\mu$ en $\gamma_\epsilon$. 
+					Pero, por la *<em> observación</em>*, esto es una contradicción. <br>
+					Repitiendo este proceso para cada $\epsilon$, cuando $\epsilon \to 0$ tendremos un cuadrado $S$ de tamaño mayor a $\mu$ que esté inscrito en $\gamma$
+
+				</p>
 		</section>
 	</main>
 </body>
