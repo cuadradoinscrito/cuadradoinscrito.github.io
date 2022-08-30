@@ -134,6 +134,13 @@ footer{
 	margin-left: auto;
 }
 
+.centrog{
+	display: block;
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 .theorem{
 	font-weight: bold;
 }
