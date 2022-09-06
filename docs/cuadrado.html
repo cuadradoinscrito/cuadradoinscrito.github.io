@@ -13,6 +13,20 @@ MathJax = {
 	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 	<link rel="stylesheet" href="css/estilo.css">
+
+	<style>
+		a:link{
+			color: darkcyan;
+			text-decoration: none ;
+		}
+		a:hover {
+			color: darkgreen;
+		}
+
+		a:visited {
+			color: dimgrey;
+		}
+	</style>
 </head>
 
 <body>
@@ -37,7 +51,7 @@ MathJax = {
 
 		O en términos formales, tendríamos: </p>
 
-		<p>	\[\textit{Toda curva de Jordan } \gamma \textit{ contiene cuatro puntos que son vértices de un cuadrado}\] <br></p>
+		<p>	\[\textit{Toda curva de Jordan } \gamma \textit{ contiene cuatro puntos que son vértices de un cuadrado}\] </p>
 
 		<p> Es importante notar que, en esta página utilizaremos dos tipos de notaciones para la curvas de Jordan. <br>
 			Denotaremos a las curvas con $J$ cuando las consideremos como un subconjunto dado de $\mathbb{R}^2$ y con $\gamma$ cuando las consideremos como la imagen una función.
@@ -45,7 +59,7 @@ MathJax = {
 
 		<p>	Observemos que no es necesario que el cuadrado esté contenido dentro de la curva, de lo contrario existen contraejemplos como el siguiente: $\textit{*contraejemplo*}$<br>
 
-		Es valioso mencionar que en una publicación de 1915, donde Arnold Emch trabaja una versión más débil de este problema, menciona que fue introducido a la conjetura gracias a Aubrey J. Kempner y que ignoraba el planteamiento de Toeplitz. A raíz de esto, existe la ambigüedad de quién fue la primera persona en plantear el problema del cuadrado inscrito, aunque se le suele atribuir a Toeplitz </p> <br>
+		Es valioso mencionar que en una publicación de 1915, donde Arnold Emch trabaja una versión más débil de este problema, menciona que fue introducido a la conjetura gracias a Aubrey J. Kempner y que ignoraba el planteamiento de Toeplitz. A raíz de esto, existe la ambigüedad de quién fue la primera persona en plantear el problema del cuadrado inscrito, aunque se le suele atribuir a Toeplitz </p>
 
 		<p>	A la fecha, se han presentado demostraciones a casos especiales de esta conjetura, esto es, para familias de curvas de Jordan que cumplen ciertas condiciones o criterios de "$\textit{suavidad}$". </p>
 		
@@ -67,9 +81,14 @@ MathJax = {
 
 		<h2> Curvas convexas</h2>
 
-			<p>
-				Puede consultar una demostración de la conjetura de Toeplitz para curvas convexas en el siguiente <a href="curvasConvexas.html"> enlace </a>
-			</p>
+		<p>
+			En 1913, Emch demostró la conjetura de Toeplitz para una familia de curvas convexas que cumplía ser <em>"lo suficientemente suaves"</em>. Dos años más tarde, publicó <em>On some properties of the medians of closed continous curves formed by analytic arcs</em> donde presentó una demostración para curvas con una condición de suavidad más débil. <br>
+			Sin embargo, Emch no hizo notar que su segunda prueba, por un argumento límite, implicaba que la conjetura de Toeplitz era verdadera para todas las curvas convexas. 
+		</p>
+
+		<p>
+			Puede consultar dicho artículo en el siguiente <a href="https://www.jstor.org/stable/2370541?seq=3#metadata_info_tab_contents"> enlace </a>
+		</p>
 			
 		<h2>Curvas analíticas por partes</h2>
 
@@ -105,6 +124,22 @@ MathJax = {
 			Puede consultar el artículo original, <em>An integration approach to the Toeplitz square peg problem</em> en el siguiente <a href="https://www.cambridge.org/core/journals/forum-of-mathematics-sigma/article/an-integration-approach-to-the-toeplitz-square-peg-problem/68DBDBA1E287FF36E74BFE1A656D3E03"> enlace </a>
 		</p>
 
+		<section>
+			<h2>Referencias</h2>
+
+			<ol>
+				<li>
+					Benjamin Matschke, "A survey on the square peg problem", Notices Amer. Math. Soc. 61 (2014), no. 4, 346352.
+				</li>
+				<li> 
+					Raquel Rius, "The Square Peg Problem", Universitat De Barcelona (2019)
+				</li>
+				<li>
+					Morales-Fuentes, Ulises; Villanueva-Segovia, Cristina, "Rectangles Inscribed in Locally Connected Plane Continua", Topology Proceedings, 58: 37–43 (2021)
+				</li>
+			</ol>
+
+		</section>
 	</main>
 
 	<footer>

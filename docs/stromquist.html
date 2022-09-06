@@ -35,8 +35,35 @@ MathJax = {
 				</p>
 
 				<p>
-					En tal sección argumentamos que no es posible hallar un cuadrado inscrito para la curva de Jordan $\gamma$ pues los cuadrados inscritos pueden colapsar a un punto <br>
+					En tal sección argumentamos que no es posible hallar un cuadrado inscrito para la curva de Jordan $\gamma$ pues los cuadrados inscritos pueden colapsar a un punto. <br>
 					Sin embargo, Stromquist demostró que estos cuadrados no colapsan si la sucesión $\{\gamma_i\}$ consta de curvas $C_1$ y $\gamma$ es un encaje localmente monótono. <br>
+
+					Antes de comenzar la demostración tenemos que dar algunas definiciones y una observación. <br>
+				</p>
+			
+				<p>
+					Decimos que un segmento de una curva $\gamma _{|_{(a,b)}}$ es <strong>monótono en dirección $u$</strong>, con $u \in \mathbb{R}^2-\{0\}$ si la función $\gamma _{|_{(a,b)}} \cdot u$ es una función estrictamente creciente para toda $x \in (a,b)$ <br>
+					
+					Decimos que una curva $\gamma$ es <strong> localmente monótona </strong> si para toda $y\in \mathbb{R}$ existen un intervalo $(y - \mu, y + \mu)$ y una dirección $u(y)$ tal que $\gamma_{|_{(y - \mu, y + \mu)}}$ es monótona en dirección $u(y)$ <br>
+ 
+					De estas definiciones se sigue la siguiente <br>
+
+				</p>
+				<h3>Observación:</h3>
+				<p>
+					No es posible inscribir un cuadrado en un segmento de curva monótono. <br>
+
+					Para visualizar mejor esto, consideremos a $u$ un vector unitario, entonces tenemos que $\gamma _{|_{(a,b)}} \cdot u = ||\gamma _{|_{(a,b)}}||\cdot ||u|| = cos(\alpha)$ donde $\alpha$ es el ángulo entre $\gamma _{|_{(a,b)}}$ y $u$ <br>
+
+					Supongamos que existe un cuadrado $S$ inscrito dentro del segmento monótono $\gamma _{|_{(a,b)}}$ y sean $v_1, v_2, v_3, v_4$ los vértices de dicho cuadrado. <br> 
+
+					Consideremos que $v_1$ y $v_4$ son perpendicularles, entonces el ángulo entre $\gamma(v_4)$ y $u$ es igual al ángulo entre $\gamma(v_1)$ y $u$ más $\frac{\pi}{2}$ pero, por la periodicidad de la función coseno, esto implicaría que $\gamma _{|_{(a,b)}}$ no es monótono, lo que nos da una contradicción. <br>
+
+					Con esta información podemos iniciar la demostración.
+				</p>
+
+				<p>
+
 					Sea $\gamma$ un encaje localmente monótono y $\epsilon > 0$, buscaremos aproximar dicho encaje con una sucesión de curvas $\{\gamma_\epsilon\}$ cuando $\epsilon \to 0$
 					
 				</p>
@@ -75,10 +102,18 @@ MathJax = {
 
 				<p>
 					Se sigue que el cuadrado inscrito $S_\epsilon$ debe tener un *<em>tamaño</em>* mayor a $\mu$, de lo contrario, sus vértices deberán estar contenidos en un segmento monótono de longitud $\mu$ en $\gamma_\epsilon$. 
-					Pero, por la *<em> observación</em>*, esto es una contradicción. <br>
+					Pero, por la observación dada al principio, esto es una contradicción. <br>
 					Repitiendo este proceso para cada $\epsilon$, cuando $\epsilon \to 0$ tendremos un cuadrado $S$ de tamaño mayor a $\mu$ que esté inscrito en $\gamma$
 
 				</p>
+		</section>
+		<section>
+			<h3> Referencias</h3>
+			<ol>
+				<li> 
+					Raquel Rius, The Square Peg Problem, Universitat De Barcelona (2019) 
+				</li>
+			</ol>
 		</section>
 	</main>
 </body>
