@@ -43,10 +43,6 @@ a:hover {
 	color: darkgreen;
 }
 
-a:visited {
-	color: slategrey ;
-}
-
 nav a{
 	display: inline-block;
 	text-decoration: none;
