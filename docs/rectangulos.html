@@ -18,6 +18,7 @@
 			<a href="triangulos.html">Triángulos Inscritos</a>
 			<a href="preguntasAbiertas.html">Preguntas Abiertas</a>
 			<a href="acercade.html">Acerca de Nosotros</a>
+			<a href="glosario.html">Glosario</a>
 		</nav>
 	</header>
 	<main>
@@ -28,17 +29,17 @@
 
 			<p>Una curva de Jordan es una función \(\gamma: S^1 \to \mathbb{R}^2\) que es continua e inyectiva, donde \(S^1\) es la circunferencia de radio 1 con cetro en el origen (en el plano). En otras palabras, \(\gamma\) es lo que llamamos un encaje de \(S^1\) en \(\mathbb{R}^2\). Cuando decimos que \(\gamma\) es un encaje de \(S^1\) en \(\mathbb{R}^2\), podemos pensar que \(\gamma\) deforma a \(S^1\) en el plano, sin romper ni pegar nada, y su imagen es el resultado de esta deformación.</p>
 
-			<img class="rec_insc" src="imgs/imagen_cjordan.jpg">
+			<img class="rec_insc" src="imgs/imagen_cjordan.png">
 
 			<p>Decimos que una curva de Jordan \(\gamma\) admite un rectángulo inscrito si su imagen, \(\gamma(S^1)\), contiene los cuatro vértices de algún rectángulo. No es necesario que los lados del rectángulo se queden contenidos dentro de la curva.</p>
 
-			<img class="rec_insc" src="imgs/rectangulo_inscrito.jpg">
+			<img class="rec_insc" src="imgs/rectangulo_inscrito.png">
 
 			<p>En 1911 el matemático Otto Toeplitz planteó el siguiente problema: ¿toda curva de Jordan admite un cuadrado inscrito? A día de hoy este problema sigue abierto, pues nadie ha podido demostrar que esto se cumple para cualquier curva de Jordan (hay curvas muy extrañas, como algunas en las que cada uno de sus puntos es un pico). Lo que sí se sabe es que toda curva de Jordan admite un rectángulo inscrito. Esto fue probado por Vaughan en 1977. A continuación daremos la idea de una prueba de este hecho. Nuestra prueba es muy similar a la de Vaughan, pero si quiere ver una idea de la prueba original puede hacer click en el siguiente link: <a href="Vaughan.html">Prueba de Vaughan</a>.</p> 
 
 			<p>Sea \(\gamma\) una curva de Jordan, y pongamos \(J=\gamma (S^1)\). Consideremos el espacio de subconjuntos de \(J\) con a lo más dos puntos \(F_2(J) = \{\{x,y\}:x,y\in J\}\) con la <a href="metHaus.html">métrica de Hausdorff</a>. Con la métrica de Hausdorff, intuitivamente, dos elementos de \(F_2(J)\) estarán cerca si casi se enciman.</p>
 
-			<img id = "mHausd" src="imgs/mhaussd.jpg">
+			<img id = "mHausd" src="imgs/mhaussd.png">
 
 			<p>Por ejemplo, en la imagen anterior la pareja de puntos azules está cerca de la pareja de puntos rojos porque casi se enciman. Otra manera de ver que estas parejas están cerca es notando que sólo hay que mover los puntos rojos un poco para que la pareja de puntos rojos coincida con la de los puntos azules. Con esta idea de cercanía, la pareja de puntos verdes está lejos de las otras dos parejas.</p>
 
@@ -49,7 +50,7 @@
 			Lo que hace esta función es que a cada pareja de puntos \(x,y\) de la curva \(J\) (también a los de la forma \( \{x,x\} \) ) le asigna un punto \(f(\{x,y\})\) en \(\mathbb{R}^3\). Las dos primeras coordenadas de \(f(\{x,y\})\) corresponden al punto medio de \(x\) y \(y\), mientras que la tercera coordenada es la distancia euclidiana entre \(x\) y \(y\):
 			</p>
 
-			<img id = "fVaughan" src="imgs/fVaughan.jpg">
+			<img id = "fVaughan" src="imgs/fVaughan.png">
 
 			<p>Notemos que si \(\{x,y\}\) y \( \{a,b\} \) son parejas de puntos distintas con el mismo punto medio y tales que \(d_e(x,y) = d_e(a,b)\) entonces estos cuatro puntos forman un rectángulo (<a href="lemaRec.html">prueba de este hecho</a>). Así, procediendo por contradicción, si suponemos que \(\gamma\) no admite ningún rectángulo inscrito entones \(f\) debe ser inyectiva, y como también es continua entonces es un encaje. Esto implica que la imagen de \(f\) es una copia topológica de \(F_2(J)\), y ya mencionamos que este es homeomorfo a una banda de Möbius, de modo que \(f(F_2(J)) = M\) es una banda de Möbius en \(\mathbb{R}^3\). Además, existe un teorema que nos asegura que la imagen del borde bajo un encaje es igual al borde de la imagen, y aplicado a nuestro caso quiere decir que el borde de \(M\) es \(f(F_1(J))\) (pues ya vimos que \(F_1(J)\) corresponde al borde de la banda de Möbius \(F_2(J)\). Más aún, como \(f(F_1(J))\) está contenido en el plano \(XY\) (pues la distancia de un punto a si mismo es 0) entonces \(M\) es una banda de Möbius en \(\mathbb{R}^3\) que se queda arriba del plano \(XY\) y su intersección con dicho plano es solamente su borde.</p>
 
@@ -83,7 +84,7 @@
 
 			<p>Por otro lado, un ejemplo sencillo de un espacio que inscribe rectángulos es cualquier espacio con interior no vacío. Sin embargo, hay espacios para los que no es trivial determinar si inscriben rectángulos o no, por ejemplo, ¿será cierto que el espacio con forma de letra X inscribe rectángulos? o ¿el espacio con forma de letra H inscribirá rectángulos?</p>
 
-			<img id = "H4odo" src="imgs/4odoHrect.jpg">
+			<img id = "H4odo" src="imgs/4odoHrect.png">
 
 
 			<p>En 2020 Morales y Villanueva clasificaron los continuos localmente conexos del plano que inscriben rectángulos. Para ello procedieron de manera similar a Vaughan. Dado un continuo \(X\subset \mathbb{R}^2\) y un encaje \(\gamma: X \to \mathbb{R}^2\), pongamos \(Y=\gamma(X)\) y consideremos la función \(f_\gamma:F_2(Y) \to \mathbb{R}^3\) dada por 
@@ -93,7 +94,7 @@
 
 			<p>En resumen, si un continuo \(X\) no inscribe rectángulos entonces su segundo producto simétrico, \(F_2(X)\), se puede encajar en \(\mathbb{R}^3\). Así, si queremos saber si un continuo plano \(X\) inscribe rectángulos, es conveniente ver si \(F_2(X)\) se puede meter en \(\mathbb{R}^3\). Este es un tema que ha sido estudiado ampliamente en la teoria de continuos e hiperespacios, y un resultado que es de particular interés para lo que estamos haciendo fue obtenido por E.Castañeda [referencia 5], el cual dice que si \(X\) es un continuo localmente conexo tal que su segundo producto simétrico se puede meter en \(\mathbb{R}^3\) entonces \(X\) se puede encajar en el continuo que tiene forma de 8 y por tanto debe ser homeomorfo a uno de los continuos de la siguiente imagen:</p>
 
-			<img id = "continuosDel8" src="imgs/continuosDel8.jpg">
+			<img id = "continuosDel8" src="imgs/continuosDel8.png">
 
 			<p>De esto se sigue que si \(X\) es un continuo plano localmente conexo que no inscribe rectángulos entonces su segundo producto simétrico se puede encajar en \(\mathbb{R}^3\) y por tanto debe ser homeomorfo a uno de los siete continuos de la imagen de arriba. Como \(S^1\) inscribe rectángulos, \(X\) no puede ser homeomorfo a ninguno de los continuos de la fila de arriba, pues cada uno de estos cuatro contiene una copia topológica de \(S^1\). Además, en [referencia 1] Morales y Villanueva probaron que el 4-odo también inscribe rectángulos, por lo que si un continuo plano localmente conexo no inscribe rectángulos entonces debe ser un arco o un triodo simple.</p>
 		</section>
