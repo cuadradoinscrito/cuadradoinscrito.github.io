@@ -75,6 +75,12 @@ p{
 
 }
 
+.cuadradoSim{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 footer{
 	background: darkcyan;
 	padding: 1.3%;
