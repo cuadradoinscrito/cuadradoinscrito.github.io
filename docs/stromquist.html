@@ -40,10 +40,16 @@ MathJax = {
 
 					Antes de comenzar la demostración tenemos que dar algunas definiciones y una observación. <br>
 				</p>
-			
+				
+				<p>
+					En esta demostración definimos el <strong> tamaño </strong> de un cuadrilátero $S = (s_1, s_2, s_3, s_4)$ como $min \{s_4-s_1, (1+s_3)-s_4, (1+s_2)-s_3, (1+s_1)-s_2\}$. <br>
+					De esta definición es importarte hacer dos observaciones; la primera es que el único cuadrilátero de tamaño $0$ son los cuadriláteros de un único punto, la segunda es que esta definición de tamaño se hace sobre el espacio de parámetros, por lo tanto, el valor del tamaño de un cuadrilátero no tiene relación directa con la longitud de los segmentos del mismo.
+					<br>
+				</p>
+
 				<p>
 					Decimos que un segmento de una curva $\gamma _{|_{(a,b)}}$ es <strong>monótono en dirección $u$</strong>, con $u \in \mathbb{R}^2-\{0\}$ si la función $\gamma _{|_{(a,b)}} \cdot u$ es una función estrictamente creciente para toda $x \in (a,b)$ <br>
-					
+					<br>
 					Decimos que una curva $\gamma$ es <strong> localmente monótona </strong> si para toda $y\in \mathbb{R}$ existen un intervalo $(y - \mu, y + \mu)$ y una dirección $u(y)$ tal que $\gamma_{|_{(y - \mu, y + \mu)}}$ es monótona en dirección $u(y)$ <br>
  
 					De estas definiciones se sigue la siguiente <br>
@@ -52,8 +58,8 @@ MathJax = {
 				<h3>Observación:</h3>
 				<p>
 					No es posible inscribir un cuadrado en un segmento de curva monótono. <br>
-
-					Para visualizar mejor esto, consideremos a $u$ un vector unitario, entonces tenemos que $\gamma _{|_{(a,b)}} \cdot u = ||\gamma _{|_{(a,b)}}||\cdot ||u|| = cos(\alpha)$ donde $\alpha$ es el ángulo entre $\gamma _{|_{(a,b)}}$ y $u$ <br>
+					<br>
+					Para esto, consideremos a $u$ un vector unitario, entonces tenemos que $\gamma _{|_{(a,b)}} \cdot u = ||\gamma _{|_{(a,b)}}||\cdot ||u|| = cos(\alpha)$ donde $\alpha$ es el ángulo entre $\gamma _{|_{(a,b)}}$ y $u$ <br>
 
 					Supongamos que existe un cuadrado $S$ inscrito dentro del segmento monótono $\gamma _{|_{(a,b)}}$ y sean $v_1, v_2, v_3, v_4$ los vértices de dicho cuadrado. <br> 
 
@@ -62,19 +68,24 @@ MathJax = {
 					Con esta información podemos iniciar la demostración.
 				</p>
 
+				<h3>Demostración:</h3>
+
 				<p>
 
 					Sea $\gamma$ un encaje localmente monótono y $\epsilon > 0$, buscaremos aproximar dicho encaje con una sucesión de curvas $\{\gamma_\epsilon\}$ cuando $\epsilon \to 0$
 					
 				</p>
 				<p>
-					Para cada $\epsilon$ sea $\delta$ tal que $|x-y|< \delta$ implique que $||\gamma(x)-\gamma(y)||< \epsilon$ y que $\delta<\frac{1}{2}\mu$ para una $\mu >0$.<br>
+					Para cada $\epsilon$ sea $\delta$ tal que $|x-y|< \delta$ implique que $||\gamma(x)-\gamma(y)||< \epsilon$  <br>
+					<br>
+					Así mismo, consideremos una constante  $\mu > 0$ tal que $\delta<\frac{1}{2}\mu$.<br>
+					<br>
 					Definimos cada $\gamma_\epsilon: \mathbb{R}\to \mathbb{R}^2$ como: 
 					\[\gamma_\epsilon(x)= \frac{1}{\delta} \int_{t=0}^{\delta} \gamma(x+t)dt\]
 
 					Tenemos que $||\gamma_\epsilon (x) - \gamma (x)||<\epsilon$ pues, para toda $x$ se cumple que: 
 
-					\[||\gamma_\epsilon(x) - \gamma(x)||= \left| \left|\frac{1}{\delta} \int_{t=0}^{\delta} \gamma(x+t)dt - \frac{1}{\delta} \int_{t=0}^{\delta} \gamma(x)dt \right| \right| \leq \frac{1}{\delta} \int_{t=0}^{\delta} ||\gamma (x+t) - \gamma (x)||<\frac{1}{\delta} (\delta\cdot\epsilon) =  \epsilon\]
+					\[||\gamma_\epsilon(x) - \gamma(x)||= \left| \left|\frac{1}{\delta} \int_{t=0}^{\delta} \gamma(x+t)dt - \frac{1}{\delta} \int_{t=0}^{\delta} \gamma(x)dt \right| \right| \leq \frac{1}{\delta} \int_{t=0}^{\delta} ||\gamma (x+t) - \gamma (x) dt||<\frac{1}{\delta} (\delta\cdot\epsilon) =  \epsilon\]
 
 					Además, $\gamma_\epsilon$ tiene una derivada dada por: 
 
@@ -90,7 +101,8 @@ MathJax = {
 
 				<p>
 					Ahora veremos que $\gamma_\epsilon$ es localmente monótona con constante $\frac{1}{2} \mu$. <br>
-					Sea $u(y)$ tal que $\gamma_{|(y-\mu, y+\mu)}$ es monótona en la dirección $u(y)$ y sean $x_1, x_2 \in (y-\mu, y+\mu)$ tales que $x_1< x_2$ <br>
+					<br>
+					Sea $u(y)$ tal que $\gamma_{|(y-\mu, y+\mu)}$ es monótona en la dirección $u(y)$ y sean $x_1, x_2 \in (y-\frac{1}{2}\mu, y+\frac{1}{2}\mu)$ tales que $x_1< x_2$ <br>
 					Puesto que elegimos que $\gamma$ sea monótona en la dirección $u(y)$ se cumple que:
 
 					\[(\gamma_\epsilon(x_2)-\gamma_\epsilon(x_1))\cdot u(y)=  \left( \frac{1}{\delta} \int_{t=0}^{\delta} (\gamma_\epsilon(x_2+t)-\gamma_\epsilon(x_1+t))dt\right ) \cdot u(y) >0\]
@@ -101,7 +113,7 @@ MathJax = {
 				</p>
 
 				<p>
-					Se sigue que el cuadrado inscrito $S_\epsilon$ debe tener un *<em>tamaño</em>* mayor a $\mu$, de lo contrario, sus vértices deberán estar contenidos en un segmento monótono de longitud $\mu$ en $\gamma_\epsilon$. 
+					Se sigue que el cuadrado inscrito $S_\epsilon$ debe tener un tamaño mayor a $\mu$, de lo contrario, sus vértices deberán estar contenidos en un segmento monótono de longitud $\mu$ en $\gamma_\epsilon$. 
 					Pero, por la observación dada al principio, esto es una contradicción. <br>
 					Repitiendo este proceso para cada $\epsilon$, cuando $\epsilon \to 0$ tendremos un cuadrado $S$ de tamaño mayor a $\mu$ que esté inscrito en $\gamma$
 
