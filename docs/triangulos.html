@@ -25,7 +25,7 @@
 		<section>
 			<h2>Triángulos Inscritos en Curvas de Jordan</h2>
 
-			<p>¿Será cierto que toda curva de Jordan admite un triángulo equilátero inscrito? Es decir, si \(J\subset \mathbb{R^2}\) es una curva de Jordan, ¿existirán tres puntos de \(J\) que sean los vértices de un triángulo equilátero? Pues resulta que sí, y la prueba de este hecho es sencilla: </p>
+			<p>¿Será cierto que toda curva de Jordan admite un triángulo equilátero inscrito? Es decir, si \(J\subset \mathbb{R^2}\) es una curva de Jordan (un subespacio del plano homeomorfo a una circunferencia), ¿existirán tres puntos de \(J\) que sean los vértices de un triángulo equilátero? Pues resulta que sí, y la prueba de este hecho es sencilla: </p>
 
 			<p>Tomemos un punto \(p\) en el interior de \(J\) y consideremos una circunferencia \(C\) con centro en \(p\) y que se quede contenida en el interior de \(J\).</p>
 
@@ -44,15 +44,13 @@
 
 			<img class = "tEquilatero" src="imgs/tEquilatero_4.png">
 
-			<p>Si \(v\) está en \(J\) entonces \(qvw\) es un triángulo equilátero inscrito en \(J\), y si \(v\) está en \(int(J)\) entonces movemos a \(w\) de manera continua por \(J\) hasta llegar a un punto \(m\in J\) que esté a distancia máxima de \(q\) en \(J\), y al ir moviendo \(w\) podemos ir moviendo a \(v\) de manera continua y de tal forma que \(qvw\) siga siendo un triángulo equilátero en cada momento. Notemos que cuando \(w\) llega al punto \(m\) se tiene que \(v\) debe estar en \(ext(J)\cup J\), pues de no ser así podríamos encontrar un punto de \(J\) cuya distancia a \(q\) sea mayor que \(d(q,m)\). Si \(v\) está en \(J\) ya acabamos y si \(v\in ext(J)\), como \(v\) empezó adentro de \(J\) y acabó afuera y lo fuimos moviendo de manera continua entonces \(v\) tuvo que cruzar a \(J\) en algún momento, y con los puntos \(v\) y \(w\) de dicho momento tenemos que \(qvw\) es un triángulo equilátero inscrito en \(J\).</p> 
+			<p>Si \(v\) está en \(J\) entonces \(qvw\) es un triángulo equilátero inscrito en \(J\), y si \(v\) está en \(int(J)\) entonces movemos a \(w\) de manera continua por \(J\) hasta llegar a un punto \(m\in J\) que esté a distancia máxima de \(q\) en \(J\), y al ir moviendo \(w\) podemos ir moviendo a \(v\) de manera continua y de tal forma que \(qvw\) siga siendo un triángulo equilátero en cada momento. Notemos que cuando \(w\) llega al punto \(m\) se tiene que \(v\) debe estar en \(ext(J)\cup J\), pues de no ser así podríamos encontrar un punto de \(J\) cuya distancia a \(q\) sea mayor que \(d(q,m)\). Si \(v\) está en \(J\) ya acabamos y si \(v\in ext(J)\), como \(v\) empezó adentro de \(J\) y acabó afuera y lo fuimos moviendo de manera continua, entonces \(v\) tuvo que cruzar a \(J\) en algún momento, y con los puntos \(v\) y \(w\) de dicho momento tenemos que \(qvw\) es un triángulo equilátero inscrito en \(J\).</p> 
 
 			<p>En la siguiente animación esta última idea queda más clara, pues se puede ver cómo al mover \(w\) se mueve \(v\), de modo que \(qvw\) siempre forma un triángulo equilátero, y en algún momento \(v\) pasa por la curva \(J\).</p>
 
-			<!-- <video class = "anim" src="videos/AnimTrEqInscrito.mp4" controls></video> -->
+			<iframe class= "geogebra_anim" src="https://www.geogebra.org/material/iframe/id/cramhvff/width/617/height/474/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="617px" height="474px" style="border:0px;" allowfullscreen> </iframe>
 
-			<iframe id = "geogebra_file" src="https://www.geogebra.org/material/iframe/id/uqps5ysz/width/617/height/474/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="617px" height="474px" style="border:0px;" allowfullscreen> </iframe>
-
-			<p>La idea que acabamos de usar se puede generalizar para probar que las curvas de Jordan inscriben todo tipo de triángulos, es decir, si \(J\) es una curva de Jordan y \(T\) es un triángulo entonces \(J\) contiene los tres vértices de un triángulo semejante a \(T\). La prueba de este hecho, así como la prueba anterior, se encuentran en [1].</p>
+			<p>La idea que acabamos de usar se puede generalizar para probar que las curvas de Jordan inscriben todo tipo de triángulos, es decir, si \(J\) es una curva de Jordan y \(T\) es un triángulo entonces \(J\) contiene los tres vértices de un triángulo semejante a \(T\) [1]. La prueba de este hecho es completamente análoga a la que acabamos de hacer para triángulos equiláteros, lo que cambia es que el triángulo que tomamos inscrito en la circunferencia lo tomamos semejante a \(T\) y de tal forma que el punto \(q\) corresponda al vértice con el ángulo más grande.</p>
 
 			<p>Ahora sabemos que las curvas de Jordan siempre admiten al menos un triángulo equilátero inscrito, pero todavía podemos decir más al respecto. En [1] Meyerson probó que dada una curva de Jordan \(J\), cada uno de sus puntos, salvo quizá dos, es un vértice de un triángulo equilátero inscrito en \(J\). En particular, este resultado nos dice que las curvas de Jordan inscriben muchos triángulos equiláteros y que el conjunto de puntos vértice es muy grande.</p>
 
