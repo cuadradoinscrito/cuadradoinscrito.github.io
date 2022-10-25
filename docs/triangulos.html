@@ -60,19 +60,46 @@
 		<section>
 			<h2>Triángulos Inscritos en Otros Continuos del Plano</h2>
 
-			<p>En la sección anterior vimos que cualquier curva de Jordan inscribe todo tipo de triángulos. En otras palabras, dado un triángulo \(T\), no importa cómo deformemos a \(S^1\), la curva resultante siempre contendrá los 3 vértices de un triángulo semejante a \(T\). Esta es una propiedad que tiene \(S^1\), y para hacer referencia a ella diremos simplemente que \(S^1\) inscribe todo tipo de triángulos.</p>
+			<p>En la sección anterior vimos que cualquier curva de Jordan inscribe todo tipo de triángulos. En otras palabras, para cualquier triángulo \(\Delta\), no importa cómo deformemos a \(S^1\), la curva resultante siempre contendrá los 3 vértices de un triángulo semejante a \(\Delta\). Esta es una propiedad que tiene \(S^1\), y para hacer referencia a ella diremos simplemente que \(S^1\) inscribe todo tipo de triángulos.</p>
 
-			<p>Una pregunta natural es: ¿cuáles otros subespacios del plano inscriben todo tipo de triángulos? es decir ¿para que espacios \(X\subset \mathbb{R}^2\) se cumple que, dado un triángulo cualquiera \(T\), todo subespacio del plano homeomorfo a \(X\) contiene los tres vértices de un triángulo semejante a \(T\)?</p>
+			<p>Una pregunta natural es: ¿cuáles otros subespacios del plano inscriben todo tipo de triángulos? es decir ¿para que espacios \(X\subset \mathbb{R}^2\) se cumple que, para cualquier triángulo \(\Delta\), todo subespacio del plano homeomorfo a \(X\) contiene los tres vértices de un triángulo semejante a \(\Delta\)?</p>
 
 			<p>Veamos que el triodo simple (un continuo homeomorfo a la letra T) inscribe todo tipo de triángulos.</p>
 
 			<p>Sea \(T\) un triodo simple, formado por tres arcos \(A_1,A_2,A_3\) con vértice \(v = A_1 \cap A_2 \cap A_3\) y sea \(\Delta\) un triángulo (con lados \(a,b,c\) y ángulos \(\alpha , \beta , \gamma\).</p>
 
-			<p>Consideremos la función \(g:\mathbb{C} \times \mathbb{C} \to \mathbb{C}\) dada por \((z_1,z_2) \mapsto \frac{a}{b}e^{i\gamma}(z_2-z_1)+z_1\). Pensando a los puntos del plano como números complejos y viceversa, lo que le hace la función \(g\) a una pareja de puntos \(\bar{x_1},\bar{x_2}\) es rotar \(\bar{x_2}\) respecto a \(\bar{x_1}\) \(\gamma\) radianes en sentido antihorario, y al punto resultante lo acerca o aleja de \(\bar{x_1}\), de modo que \(\bar{x_1},\bar{x_2}\) y \(f(\bar{x_1},\bar{x_2})\) forman un triángulo semejante a \(\Delta\). <strong>Animación</strong></p>
+			<img id = "triangulos_triodos_izq" src="imgs/triodo1.png">
+			<img id = "triangulos_triodos_der" src="imgs/triangulo_triodos.png">
 
-			<p>Ahora, sea \(C\) una circunferencia con centro en \(v\) y con radio suficientemente pequeño para que intersecte a cada uno de los arcos \(A_i\), y para cada \(i=1,2,3\) sea \(B_i\) el subarco de \(A_i\) que va del vértice del triodo al primer punto donte \(A_i\) intersecta a \(C\) (avanzando desde \(v\) por \(A_i\)). Sea \(T_2\) el triodo formado por los arcos \(B_i\).</p>
+			<p>Consideremos la función \(g:\mathbb{C} \times \mathbb{C} \to \mathbb{C}\) dada por \((z_1,z_2) \mapsto \frac{a}{b}e^{i\gamma}(z_2-z_1)+z_1\). Pensando a los puntos del plano como números complejos y viceversa, lo que le hace la función \(g\) a una pareja de puntos \(\bar{x_1},\bar{x_2}\) es rotar \(\bar{x_2}\) respecto a \(\bar{x_1}\) \(\gamma\) radianes en sentido antihorario, y al punto resultante lo acerca o aleja de \(\bar{x_1}\), de modo que \(\bar{x_1},\bar{x_2}\) y \(g(\bar{x_1},\bar{x_2})\) forman un triángulo semejante a \(\Delta\). <strong>Animación</strong></p>
+
+			<p>Ahora, sea \(C\) una circunferencia con centro en \(v\) y con radio suficientemente pequeño para que intersecte a cada uno de los arcos \(A_i\), y para cada \(i=1,2,3\) sea \(B_i\) el subarco de \(A_i\) que va del vértice del triodo al primer punto donte \(A_i\) intersecta a \(C\) (avanzando desde \(v\) por \(A_i\)). Sea \(T_2\) el triodo formado por los arcos \(B_i\). Probaremos que \(T_2\) contiene los tres vértices de un triángulo semejante a \(\Delta\).</p>
+
+			<img class = "tEquilatero" src="imgs/triodo2.png">
+
+			<p>Notemos que \(T_2\) se queda contenido adentro de \(C\) y divide su interior en 3 regiones \(R_1,R_2\) y \(R_3\).</p>
+
+			<img class = "tEquilatero" src="imgs/triodo3.png">
 
 			<p>Ahora, consideremos una circunferencia \(W\) con centro en \(v\) y radio suficientemente pequeño, de tal forma que si dos puntos están en el interior de \(W\) entonces su imagen bajo \(g\) cae en el interior de \(C\).</p>
+
+			<p>Sean \(p,q\in (B_1\cap int(W))\backslash \{v\}\), y tales que al avanzar desde \(v\) por \(B_1\) \(p\) aparece primero que \(q\).</p>
+
+			<img class = "tEquilatero" src="imgs/triodo4.png">
+
+			<p>Como \(p,q\) están en el interior de \(W\) entonces \(g(p,q)\) está en el interior de \(C\). Tenemos tres casos. Si \(g(p,q)\) está en \(T2\) entonces ya acabamos, \(p,q\) y \(g(p,q)\) forman un triángulo semejante a \(\Delta\) que está inscrito en \(T_2\) y por tanto en \(T\).</p>
+
+			<p>Si \(g(p,q)\) está en la región \(R_1\) (la que no contiene a \(B_1\)) en su frontera) podemos ir acercando \(p\) a \(q\) de manera continua hasta que \(g(p,q)\) deje de estar en \(R_1\). \(g(p,q)\) también se irá moviendo de manera continua, formando un arco que se queda contenido en el interior de \(C\), que inicia en la región \(R_1\) y termina fuera de ella, por lo que en algún momento debe cruzar por \(T_2\). Cuando \(g(p,q)\) cruza a \(T_2\), \(p,q\) y \(g(p,q)\) forman un triángulo semejante a \(\Delta\) inscrito en \(T_2\) y por tanto también inscrito en \(T\).</p>
+
+			<p>Si \(g(p,q)\) está en la región \(R_2\) podemos mover a \(p\) de manera continua hasta un punto de \(B_2\cap int(W)\) y luego acercar \(q\) a \(p\) de manera continua hasta que, como en el caso anterior, \(g(p,q)\) acabe fuera de la región \(R_2\). Como antes, al mover \(p\) y \(q\) de manera continua por \(T_2\) (sin que se crucen ni salgan de \(W\)), \(g(p,q)\) también se va moviendo de manera continua, y va formando un arco que inicia en la región \(R_2\), termina fuera de ésta región y se queda contenido en el interior de la circunferencia \(C\). Por tanto, en algún momento \(g(p,q)\) debe cruzar por \(T_2\), y en dicho momento \(p,q\) y \(g(p,q)\) forman un triángulo semejante a \(\Delta\) que está inscrito en \(T_2\) y por tanto también en \(T\). (Ver el frame de geogebra de abajo)</p>
+
+			<p>Si \(g(p,q)\) está en la región \(R_3\) se puede proceder de manera análoga al caso anterior.</p>
+
+			<p>(En el siguiente frame de geogebra se pueden manipular los puntos \(p\) y \(q\). Arrastre a \(p\) al arco \(B_2\) sin salir de la circunferencia \(W\) (la naranja) y luego acerque \(q\) hacia \(p\). Observe que la imagen de estos dos puntos bajo la función \(g\) cruza al triodo en algún punto).</p>
+
+			<iframe class= "geogebra_anim" src="https://www.geogebra.org/material/iframe/id/jexfxxge/width/617/height/474/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="617px" height="474px" style="border:0px;" allowfullscreen> </iframe>
+
+			<p>En cualquier caso, \(T\) contiene los tres vértices de un triángulo semejante a \(\Delta\). Como \(T\) y \(\Delta\) fueron arbitrarios, concluimos que los triodos inscriben todo tipo de triángulos.</p>
 
 
 
