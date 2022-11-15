@@ -13,11 +13,11 @@
 	<h1>Rectángulos Inscritos en Curvas Simétricas</h1>
 	
 	<main>
-		<p>Diremos que una curva de Jordan es simétrica respecto a un punto si su imagen lo es. En [--] se probó que si una curva de Jordan es simétrica respecto a un punto entonces admite un cuadrado inscrito. En esta sección probaremos algo más general. Demostraremos que si una curva de Jordan es simétrica respecto a un punto entonces inscribe rectángulos de cualquier razón.</p>
+		<p>Nielsen y Wright [1] probaron que si un continuo \(X\subset \mathbb{R}^n\) es simétrico respecto a un punto o a un hiperplano entonces inscribe rectángulos de cualquier razón. En esta sección probaremos el caso en el que \(X\subset \mathbb{R}^2\) es una curva de Jordan simétrica respecto a un punto. Es decir, demostraremos que si una curva de Jordan es simétrica respecto a un punto entonces inscribe rectángulos de cualquier razón.</p>
 
-		<p><strong>Teorema.</strong> Si \(\gamma: S^1 \to \mathbb{R}^2\) es una curva de Jordan simétrica respecto a un punto, entonces \(\gamma\) admite un rectángulo inscrito de razón \(r\) para cada \(r \in (0,1]\).</p>
+		<p><strong>Teorema.</strong> Si \(\gamma: S^1 \to \mathbb{R}^2\) es una curva de Jordan tal que \(\gamma(S^1)\) es simétrico respecto a un punto, entonces \(\gamma\) admite un rectángulo inscrito de razón \(r\) para cada \(r \in (0,1]\).</p>
 
-		<p>Demostración: Por hipótesis (y por cómo definimos que la simetría de una curva \(\gamma\)) \(J=\gamma(S^1)\) es simétrica respecto a un punto en \(\mathbb{R}^2\). Sin pérdida de generalidad, supongamos que \(J\) es simétrica respecto al origen \((0,0)\).</p>
+		<p>Demostración: Por hipótesis \(J=\gamma(S^1)\) es simétrica respecto a un punto en \(\mathbb{R}^2\). Sin pérdida de generalidad, supongamos que \(J\) es simétrica respecto al origen \((0,0)\).</p>
 
 		<p>Ahora, sean \(p\) y \(q\) puntos de \(J\) tales que la distancia de \(p\) al origen es mínima (tomando en cuenta todos los puntos de \(J\)) y la distancia de \(q\) al origen es máxima (tomando en cuenta todos los puntos de \(J\)). Sea \(\theta \in (0,\pi/2)\) el menor ángulo formado entre las diagonales de un rectángulo de razón \(r\) y consideremos la función \(g_\theta: J \to \mathbb{R}^2\) que a cada \(x\in J\) lo rota \(\theta\) radianes en contra de las manecillas del reloj, respecto al origen</p>
 
@@ -30,6 +30,15 @@
 		<p>En la siguiente animación se puede visualizar la idea de la prueba. El punto \(X\) se mueve a lo largo de la curva y los otros tres están en función de \(X\). El punto \(Y\) viene a ser \(g_\theta(X)\), es decir, rota a \(X\) \(\theta\) radianes respecto al punto \(O\) (puede modificar el ángulo en la casilla de la animación). \(X_{reflejo}\) y \(Y_{reflejo}\) son los reflejados de \(X\) y \(Y\) respecto a \(O\). Notemos que estos cuatro puntos siempre forman un rectángulo de la misma razón (que depende del ángulo en la casilla), que \(X\) y \(X_{reflejo}\) siempre están sobre la curva y que \(Y\) y \(Y_{reflejo}\) cruzan la curva al mismo tiempo, y cuando cruzan se forma un rectángulo de la razón dada que está inscrito en la curva; lo que se argumenta en la prueba es que, en efecto, \(Y\) cruza la curva en algún momento.</p>
 
 		<iframe class = "geogebra_anim" src="https://www.geogebra.org/material/iframe/id/sbstsjus/width/617/height/474/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="617px" height="474px" style="border:0px;" allowfullscreen> </iframe>
+
+	<section>
+			<h2>Referencias</h2>
+
+			<ol>
+				<li>Nielsen, M. J., & Wright, S. E. (1995). Rectangles inscribed in symmetric continua. Geometriae Dedicata, 56(3), 285–297. https://doi.org/10.1007/bf01263570</li>
+			</ol>
+
+		</section>
 
 	</main>
 	<footer>
