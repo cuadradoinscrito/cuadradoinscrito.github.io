@@ -66,13 +66,14 @@
 
 			<p>¿Será cierto que toda curva de Jordan admite un triángulo equilátero inscrito? Es decir, si \(J\subset \mathbb{R^2}\) es una curva de Jordan, ¿existirán tres puntos de \(J\) que sean los vértices de un triángulo equilátero? Pues resulta que sí, y la prueba de este hecho es sencilla: </p>
 
-			<p>Tomemos un punto \(p\) en la región acotada de \(\mathbb{R^2}\setminus J\), \(I(J)\); como dicha región es un abierto de \(\mathbb{R^2}\), podemos considerar una circunferencia \(C\) con centro en \(p\) que se quede contenida en \(I(J)\).</p>
+			<p>Tomemos un punto \(p\) en la región acotada de \(\mathbb{R^2}\setminus J\), que denotaremos por \(I(J)\); como dicha región es un abierto de \(\mathbb{R^2}\), podemos considerar una circunferencia \(C\) con centro en \(p\) que se quede contenida en \(I(J)\).</p>
 
 			<p>Ahora hacemos crecer el radio de \(C\) de manera continua y nos detenemos cuando \(C\) toque a la curva \(J\) por primera vez, digamos en un punto \(q\). (Bien pudo haber pasado que \(C\) haya intersectado a \(J\) por primera vez en más de un punto, pero no importa, elijamos uno de esos puntos y nombrémoslo \(q\).)</p>
 
 			<p>Consideremos el triángulo equilátero inscrito en \(C\) que tiene un vértice en \(q\), y llamemos \(v\) y \(w\) a los otros dos vértices. Notemos que nuestra construcción garantiza que tanto \(v\) como \(w\) (y de hecho la circunferencia completa \(C\)) están contenidos en \(I(J)\cup J\).</p>
 
-			<p>Si \(v\) y \(w\) están en \(J\), ya acabamos: \(q, v y w\)son los vértices de un triángulo      equilátero inscrito en \(J\). Si por lo menos uno de los puntos \(v\), \(w\) no está en \(J\) podemos garantizar que existe un triángulo equilátero con un vértice en nuestro punto fijo \(q\), otro vértice en \(J\) y un tercer vértice en \(I(J)\cup J\). Pues si un vértice, digamos \(w\), está en \(J\) justo estamos en esa situación y si ninguno de los dos puntos, \(v\) y \(w\), están en \(J\), entonces hacemos crecer el radio del círculo \(C\), dejando fijo a \(q\) (i.e. moviendo continuamente el centro de \(C\) en la dirección \(\vec{qp}\)), hasta que otro de los vértices, \(v\) o \(w\), también esté en \(J\). Digamos que \(w\) es el primer vértice que toca a \(J\), y notemos que \(v\) sigue estando en \(I(J)\cup J\).</p>
+			<p>Si \(v\) y \(w\) están en \(J\), ya acabamos: \(q, v \) y \(w\)son los vértices de un triángulo      equilátero inscrito en \(J\). Si por lo menos uno de los puntos \(v\), \(w\) no está en \(J\) podemos garantizar que existe un triángulo equilátero con un vértice en nuestro punto fijo \(q\), otro vértice en \(J\) y un tercer vértice en \(I(J)\cup J\). 
+			Pues si un vértice, digamos \(w\), está en \(J\), justo estamos en esa situación y si ninguno de los dos puntos, \(v\) y \(w\), están en \(J\), entonces hacemos crecer el radio del círculo \(C\), dejando fijo a \(q\) (i.e. moviendo continuamente el centro de \(C\) en la dirección \(\vec{qp}\)), hasta que otro de los vértices, \(v\) o \(w\), también esté en \(J\). Digamos que \(w\) es el primero de esos dos vértices en tocar a \(J\), y notemos que \(v\) sigue estando en \(I(J)\cup J\).</p>
 
 			<img src="videos/meyer30.gif" class = "centrog">
 
@@ -82,11 +83,11 @@
 
       <p> Recordemos primero que, como \(J\) es un compacto de \(\mathbb{R}^2\), podemos encontrar un punto \(m\in J\) que esté a distancia máxima de \(q\) en \(J\), i.e:
 
-        \(\[\exists m\in J\text{ tal que } \|q-m\|=\max\{\|q-x\|:x\in J\}. \]\)
+        \[\exists m\in J\text{ tal que } \|q-m\|=\max\{\|q-x\|:x\in J\}. \]
 
         Resulta entonces que dado cualquier punto \(x\in I(J)\), debemos tener \(\|q-x\|<\|q-m\|\).
         (¿por qué? Sugerencia: use el hecho de que toda semirecta con punto inicial \(x\in I(J)\) debe intersectar a \(J\) en por lo menos un punto).
-        Ahora bien, como \(w\) recorre toda la curva \(J\), llegará un momento en el que \(w=m\) y por por construcción, tenemos que \(v\) y \(w\) equidsistan de \(q\), con lo que \(\|q-v\|=\|q-w\|=\|q-m\|). De modo que, cuando \(w=m\), tenemos \(v\notin I(J)\). Pero empezamos con \(v\in I(J)\),
+        Ahora bien, como \(w\) recorre toda la curva \(J\), llegará un momento en el que \(w=m\) y por por construcción, tenemos que \(v\) y \(w\) equidsistan de \(q\), con lo que \(\|q-v\|=\|q-w\|=\|q-m\|\). De modo que, cuando \(w=m\), tenemos \(v\notin I(J)\). Pero empezamos con \(v\in I(J)\),
         y la trayacyoria de \(v\) es continua: concluimos que en elagún momento la trayectoria de \(v\) intersecta a \(J\) y claramente en el momento en el que se da esa intersección tenemos un triángulo equilátero inscrito en \(J\).</p>
 
 			<!–– <p>En la siguiente animación esta última idea queda más clara, pues se puede ver cómo al mover \(w\) se mueve \(v\), de modo que \(qvw\) siempre forma un triángulo equilátero, y en algún momento \(v\) pasa por la curva \(J\).</p> ––>
