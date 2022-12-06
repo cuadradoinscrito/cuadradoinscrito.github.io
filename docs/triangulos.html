@@ -64,31 +64,34 @@
 		<section>
 			<h2>Triángulos Inscritos en Curvas de Jordan</h2>
 
-			<p>¿Será cierto que toda curva de Jordan admite un triángulo equilátero inscrito? Es decir, si \(J\subset \mathbb{R^2}\) es una curva de Jordan (un subespacio del plano homeomorfo a una circunferencia), ¿existirán tres puntos de \(J\) que sean los vértices de un triángulo equilátero? Pues resulta que sí, y la prueba de este hecho es sencilla: </p>
+			<p>¿Será cierto que toda curva de Jordan admite un triángulo equilátero inscrito? Es decir, si \(J\subset \mathbb{R^2}\) es una curva de Jordan, ¿existirán tres puntos de \(J\) que sean los vértices de un triángulo equilátero? Pues resulta que sí, y la prueba de este hecho es sencilla: </p>
 
-			<p>Tomemos un punto \(p\) en el interior de \(J\) y consideremos una circunferencia \(C\) con centro en \(p\) y que se quede contenida en el interior de \(J\).</p>
+			<p>Tomemos un punto \(p\) en la región acotada de \(\mathbb{R^2}\setminus J\), \(I(J)\); como dicha región es un abierto de \(\mathbb{R^2}\), podemos considerar una circunferencia \(C\) con centro en \(p\) que se quede contenida en \(I(J)\).</p>
 
-			<img class = "tEquilatero" src="imgs/tEquilatero_11.png">
-			
-			<img src="videos/meyer50.gif" class = "centrog">
+			<p>Ahora hacemos crecer el radio de \(C\) de manera continua y nos detenemos cuando \(C\) toque a la curva \(J\) por primera vez, digamos en un punto \(q\). (Bien pudo haber pasado que \(C\) haya intersectado a \(J\) por primera vez en más de un punto, pero no importa, elijamos uno de esos puntos y nombrémoslo \(q\).)</p>
 
-			<p>Ahora hacemos crecer el radio de \(C\) de manera continua y nos detenemos cuando \(C\) toque a la curva \(J\) por primera vez, digamos en un punto \(q\).</p> 
+			<p>Consideremos el triángulo equilátero inscrito en \(C\) que tiene un vértice en \(q\), y llamemos \(v\) y \(w\) a los otros dos vértices. Notemos que nuestra construcción garantiza que tanto \(v\) como \(w\) (y de hecho la circunferencia completa \(C\)) están contenidos en \(I(J)\cup J\).</p>
 
-			<img class = "tEquilatero" src="imgs/tEquilatero_2.png">
+			<p>Si \(v\) y \(w\) están en \(J\), ya acabamos: \(q, v y w\)son los vértices de un triángulo      equilátero inscrito en \(J\). Si por lo menos uno de los puntos \(v\), \(w\) no está en \(J\) podemos garantizar que existe un triángulo equilátero con un vértice en nuestro punto fijo \(q\), otro vértice en \(J\) y un tercer vértice en \(I(J)\cup J\). Pues si un vértice, digamos \(w\), está en \(J\) justo estamos en esa situación y si ninguno de los dos puntos, \(v\) y \(w\), están en \(J\), entonces hacemos crecer el radio del círculo \(C\), dejando fijo a \(q\) (i.e. moviendo continuamente el centro de \(C\) en la dirección \(\vec{qp}\)), hasta que otro de los vértices, \(v\) o \(w\), también esté en \(J\). Digamos que \(w\) es el primer vértice que toca a \(J\), y notemos que \(v\) sigue estando en \(I(J)\cup J\).</p>
 
-			<p>Consideremos un triángulo equilátero inscrito en \(C\) tal que uno de sus vértices es \(q\), y llamemos \(v\) y \(w\) a los otros dos vértices. Como \(q\) fue el primer punto (o uno de los primeros puntos) de \(J\) que tocó a \(C\) cuando la hicimos crecer, entonces \(v\) y \(w\) están en \(int(J)\cup J\).</p> 
+			<img src="videos/meyer30.gif" class = "centrog">
 
-			<img class = "tEquilatero" src="imgs/tEquilatero_3.png">
+			<p>Si \(v\) está en \(J\) entonces, nuevamente, \(qvw\) es un triángulo equilátero inscrito en \(J\). Si \(v\) está en \(I(J)\), entonces, dejando fijo a \(q\), vamos moviendo a \(w\) de manera continua sobre \(J\) y nos fijamos en la trayectoria que va describiendo el vértice \(v\) del triángulo eqilátero \(qwv\).
+        Notemos que \(v\) tendrá que <q>cruzar</q> la curva \(J\) en algún momento.
+        Para convencerse de esto basta ver la animación que aquí incluimos, para demostrarlo: </p>
 
-			<p>Giramos el triángulo \(qvw\) con respecto a \(q\) (usándolo como pivote) hasta que otro de los vértices, \(v\) o \(w\), también esté en \(J\), sin pérdida de generalidad supongamos que giramos y el primer vértice que toca a \(J\) es \(w\), y notemos que \(v\) sigue estando en \(int(J)\cup J\).</p> 
+      <p> Recordemos primero que, como \(J\) es un compacto de \(\mathbb{R}^2\), podemos encontrar un punto \(m\in J\) que esté a distancia máxima de \(q\) en \(J\), i.e:
 
-			<img class = "tEquilatero" src="imgs/tEquilatero_4.png">
+        \(\[\exists m\in J\text{ tal que } \|q-m\|=\max\{\|q-x\|:x\in J\}. \]\)
 
-			<p>Si \(v\) está en \(J\) entonces \(qvw\) es un triángulo equilátero inscrito en \(J\), y si \(v\) está en \(int(J)\) entonces movemos a \(w\) de manera continua por \(J\) hasta llegar a un punto \(m\in J\) que esté a distancia máxima de \(q\) en \(J\), y al ir moviendo \(w\) podemos ir moviendo a \(v\) de manera continua y de tal forma que \(qvw\) siga siendo un triángulo equilátero en cada momento. Notemos que cuando \(w\) llega al punto \(m\) se tiene que \(v\) debe estar en \(ext(J)\cup J\), pues de no ser así podríamos encontrar un punto de \(J\) cuya distancia a \(q\) sea mayor que \(d(q,m)\). Si \(v\) está en \(J\) ya acabamos y si \(v\in ext(J)\), como \(v\) empezó adentro de \(J\) y acabó afuera y lo fuimos moviendo de manera continua, entonces \(v\) tuvo que cruzar a \(J\) en algún momento, y con los puntos \(v\) y \(w\) de dicho momento tenemos que \(qvw\) es un triángulo equilátero inscrito en \(J\).</p> 
+        Resulta entonces que dado cualquier punto \(x\in I(J)\), debemos tener \(\|q-x\|<\|q-m\|\).
+        (¿por qué? Sugerencia: use el hecho de que toda semirecta con punto inicial \(x\in I(J)\) debe intersectar a \(J\) en por lo menos un punto).
+        Ahora bien, como \(w\) recorre toda la curva \(J\), llegará un momento en el que \(w=m\) y por por construcción, tenemos que \(v\) y \(w\) equidsistan de \(q\), con lo que \(\|q-v\|=\|q-w\|=\|q-m\|). De modo que, cuando \(w=m\), tenemos \(v\notin I(J)\). Pero empezamos con \(v\in I(J)\),
+        y la trayacyoria de \(v\) es continua: concluimos que en elagún momento la trayectoria de \(v\) intersecta a \(J\) y claramente en el momento en el que se da esa intersección tenemos un triángulo equilátero inscrito en \(J\).</p>
 
-			<p>En la siguiente animación esta última idea queda más clara, pues se puede ver cómo al mover \(w\) se mueve \(v\), de modo que \(qvw\) siempre forma un triángulo equilátero, y en algún momento \(v\) pasa por la curva \(J\).</p>
+			<!–– <p>En la siguiente animación esta última idea queda más clara, pues se puede ver cómo al mover \(w\) se mueve \(v\), de modo que \(qvw\) siempre forma un triángulo equilátero, y en algún momento \(v\) pasa por la curva \(J\).</p> ––>
 
-			<iframe class= "geogebra_anim" src="https://www.geogebra.org/material/iframe/id/cramhvff/width/617/height/474/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="617px" height="474px" style="border:0px;" allowfullscreen> </iframe>
+			<!–– <iframe class= "geogebra_anim" src="https://www.geogebra.org/material/iframe/id/cramhvff/width/617/height/474/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="617px" height="474px" style="border:0px;" allowfullscreen> </iframe> ––>
 
 			<p>La idea que acabamos de usar se puede generalizar para probar que las curvas de Jordan inscriben todo tipo de triángulos, es decir, si \(J\) es una curva de Jordan y \(T\) es un triángulo entonces \(J\) contiene los tres vértices de un triángulo semejante a \(T\) [1]. La prueba de este hecho es completamente análoga a la que acabamos de hacer para triángulos equiláteros, lo que cambia es que el triángulo que tomamos inscrito en la circunferencia lo tomamos semejante a \(T\) y de tal forma que el punto \(q\) corresponda al vértice con el ángulo más grande.</p>
 
@@ -102,7 +105,7 @@
 			<h2>Referencias</h2>
 			<ol>
 				<li>Mark D. Meyerson. Equilateral triangles and continuous curves. Fund. Math., 110(1):1–9, 1980.</li>
-				<li>Mark J. Nielsen. Triangles inscribed in simple closed curves. Geom. Dedicata, 43(3):291–297, 1992.</li>	
+				<li>Mark J. Nielsen. Triangles inscribed in simple closed curves. Geom. Dedicata, 43(3):291–297, 1992.</li>
 			</ol>
 		</section>
 	</main>
