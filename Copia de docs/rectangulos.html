@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Polígonos Inscritos</title>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	<link rel="stylesheet" href="css/estilo.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+<header style="background-color: #C1C9D3" class="pb-4">
+	<nav class="navbar fixed-top navbar-expand-lg border border-dark border: 1px" style="background-color: #038B8B">
+		<div class="container-fluid" style="font-family: 'cmu_serifbold', sans-serif">
+			<a class="navbar-brand" href="home.html">Inicio</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="cuadrado.html">Cuadrados inscritos</a>
+					</li>
+					<li class="nav-item dropdown show">
+						<a href="#" class="nav-link
+							   dropdown-toggle"
+						   id="navDropdown"
+						   role="button"
+						   data-bs-toggle="dropdown"
+						   aria-expanded="false">
+							Más polígonos
+						</a>
+						<ul class="dropdown-menu"
+							aria-labelledby="navDropdown"
+							style="background-color: #038B8B">
+							<li><a href="triangulos.html"
+								   class="dropdpwn-item text-center" style="color: black">
+								Triángulos inscritos
+							</a>
+							</li>
+							<li><a href="rectangulos.html"
+								   class="dropdpwn-item text-center" style="color: black">
+								Rectángulos inscritos
+							</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="preguntasAbiertas.html">Preguntas y Ejercicios</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="glosario.html">Glosario</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
+	<main style="background-color: #C1C9D3">
+
+		<section>
+		
+			<h1>Rectángulos Inscritos</h1>
+
+			<p>Una curva de Jordan es un encaje (un homeomorfismo en su imagen) \(\gamma: S^1 \to \mathbb{R}^2\) , donde \(S^1\) es la circunferencia de radio 1 con cetro en el origen (en el plano). En ocasiones diremos curva de Jordan para referirnos a la imagen de un encaje \(\gamma: S^1 \to \mathbb{R}^2\). Cuando hablemos de una curva de Jordan como un subconjunto del plano, usualmente la denotaremos por \(J\).</p>
+
+			<!-- <img class="rec_insc" src="imgs/imagen_cjordan.png"> -->
+
+			<p>En 1911 el matemático Otto Toeplitz planteó el siguiente problema: </p>
+
+			<p>	<b><i>¿Toda curva de Jordan \(\gamma\) admite un cuadrado inscrito (i.e. su imagen contiene los cuatro vértices de algún cuadrado)?</i></b> </p> 
+
+			<p>A este problema se le conoce como <i>el problema del cuadrado inscrito</i>, o como la <i>conjetura de Toeplitz</i>. A día de hoy este problema sigue abierto, pues nadie ha podido demostrar que esto se cumple para cualquier curva de Jordan (hay curvas muy extrañas, como algunas que no son diferenciables en ningún punto). Se sabe que la conjetura es cierta para ciertas curvas, como las curvas suaves, curvas convexas, curvas simétricas respecto a un punto, entre otras (ver sección de cuadrados inscritos). En general, en los casos resueltos se pide a la curva que cumpla alguna condición extra. Pero hay un resultado relacionado que se cumple para cualquier curva de Jordan:</p>
+
+			<p>	<b><i>Toda curva de Jordan \(\gamma\) admite un rectángulo inscrito (i.e. su imagen contiene los cuatro vértices de algún rectángulo) - (Vaughan 1977).</i></b> </p> 
+
+			<img class="rec_insc" src="imgs/rectangulo_inscrito.png">
+
+			<p>El siguiente link es de un video de 3blue1brown, con animaciones muy buenas, en el que habla sobre este resultado: <a href="https://www.youtube.com/watch?v=AmgkSdhK4K8" target="_blank">link al video</a>. También, en la pestaña de <i>Las curvas de Jordan inscriben rectángulos</i> se da una prueba similar a la de Vaughan. Si quiere ver una idea de la prueba original puede hacer click en el siguiente link: <a href="Vaughan.html" target="_blank">Prueba de Vaughan</a>.</p>
+
+
+
+		</section>
+
+		<section>
+
+			<div id="accordion" style="background-color: #C1C9D3">
+				<div class="card" style="background-color: #C1C9D3">
+					<div class="card-header" id="headingOne">
+						<h5 class="mb-0">
+							<button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								<h2>Las curvas de Jordan inscriben rectángulos</h2>
+							</button>
+						</h5>
+					</div>
+
+					<div id="collapseOne" class="collapse" aria-labelledby="headingOne">
+						<div class="card-body">
+							<p>Probaremos que toda curva de Jordan admite un rectángulo inscrito. Sea \(\gamma\) una curva de Jordan, y pongamos \(J=\gamma (S^1)\). Consideremos el espacio de subconjuntos de \(J\) con a lo más dos puntos \(F_2(J) = \{\{x,y\}:x,y\in J\}\) con la <a href="metHaus.html">métrica de Hausdorff</a>. Con la métrica de Hausdorff, intuitivamente, dos elementos de \(F_2(J)\) estarán cerca si casi se enciman.</p>
+
+							<img id = "mHausd" src="imgs/mhaussd.png">
+
+							<p>Por ejemplo, en la imagen anterior la pareja de puntos azules está cerca de la pareja de puntos rojos porque casi se enciman. Otra manera de ver que estas parejas están cerca es notando que sólo hay que mover los puntos rojos un poco para que la pareja de puntos rojos coincida con la de los puntos azules. Con esta idea de cercanía, la pareja de puntos verdes está lejos de las otras dos parejas.</p>
+
+							<p>Resulta que si consideramos a \(F_2(J)\) con ésta métrica, resulta ser homeomorfo a una banda de Möbius, y el conjunto que consta de los singletones (que son los subconjuntos de \(J\) con un solo elemento), \(F_1(J)=\{\{x\}:x\in J\}\), corresponde al borde de la banda de Möbius. <a href="modelo_f2s1.html">Ver detalles.</a></p>
+
+							<p>Ahora, consideremos la función \(f:F_2(J) \to \mathbb{R}^3\) dada por 
+								$$f(\{x,y\}) = \left( \frac{x+y}{2},d_e(x,y) \right) = \left( \frac{x_1 + y_1}{2},\frac{x_2 + y_2}{2},d_e(x,y) \right)$$
+							Lo que hace esta función es que a cada pareja de puntos \(x,y\) de la curva \(J\) (también a los de la forma \( \{x,x\} \) ) le asigna un punto \(f(\{x,y\})\) en \(\mathbb{R}^3\). Las dos primeras coordenadas de \(f(\{x,y\})\) corresponden al punto medio de \(x\) y \(y\), mientras que la tercera coordenada es la distancia euclidiana entre \(x\) y \(y\):
+							</p>
+
+							<img id = "fVaughan" src="imgs/fVaughan.png">
+
+							<iframe  class="geogebra_anim" scrolling="no" title="Flor3D0" src="https://www.geogebra.org/material/iframe/id/mw3dhn4t/width/760/height/350/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/true/ld/false/sdz/false/ctl/false" width="760px" height="350px" style="border:0px;"> </iframe>
+
+							<p>Notemos que si \(\{x,y\}\) y \( \{a,b\} \) son parejas de puntos distintas con el mismo punto medio y tales que \(d_e(x,y) = d_e(a,b)\) entonces estos cuatro puntos forman un rectángulo (<a href="lemaRec.html">prueba de este hecho</a>). Así, procediendo por contradicción, si suponemos que \(\gamma\) no admite ningún rectángulo inscrito entones \(f\) debe ser inyectiva, y como también es continua entonces es un encaje. Esto implica que la imagen de \(f\) es una copia topológica de \(F_2(J)\), y ya mencionamos que este es homeomorfo a una banda de Möbius, de modo que \(f(F_2(J)) = M\) es una banda de Möbius en \(\mathbb{R}^3\). Además, existe un teorema que nos asegura que la imagen del borde bajo un encaje es igual al borde de la imagen, y aplicado a nuestro caso quiere decir que el borde de \(M\) es \(f(F_1(J))\) (pues ya vimos que \(F_1(J)\) corresponde al borde de la banda de Möbius \(F_2(J)\)). Más aún, como \(f(F_1(J))\) está contenido en el plano \(XY\) (pues la distancia de un punto a si mismo es 0) entonces \(M\) es una banda de Möbius en \(\mathbb{R}^3\) que se queda arriba del plano \(XY\) y su intersección con dicho plano es solamente su borde.</p>
+
+							<p>Acomodar una banda de Möbius de tal forma no es posible. Una manera de ver esto es reflejar \(M\) respecto al plano \(XY\) para obtener otra banda de Möbius \(M_r\). Luego, \(K = M\cup M_r\) consta de dos bandas de Möbius pegadas por sus bordes en \(\mathbb{R}^3\). Al espacio que se obtiene de pegar dos bandas de Möbius por sus bordes de esta manera se le conoce como <a href="https://es.wikipedia.org/wiki/Botella_de_Klein">botella de Klein</a>, y se sabe que las botellas de Klein no se pueden meter en \(\mathbb{R}^3\), por lo que la existencia de \(K\) es una contradicción.</p>
+
+							<p>La contradicción se dió por suponer que \(\gamma\) no admitía ningún rectángulo inscrito. Por tanto, toda curva de Jordan admite un rectángulo inscrito.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="card" style="background-color: #C1C9D3">
+					<div class="card-header" id="headingTwo">
+						<h5 class="mb-0">
+							<button class="btn" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+								<h2>El problema del rectángulo inscrito</h2>
+							</button>
+						</h5>
+					</div>
+
+					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+						<div class="card-body">
+							<p>Decimos que un rectángulo de base \(b\) (el lado más largo) y altura \(h\) tiene razón \(h/b\). El problema del rectángulo inscrito plantea que toda curva de Jordan admite al menos un rectángulo inscrito de razón \(r\) para cada \(r\in (0,1]\). Este problema es una generalización del problema del cuadrado inscrito, pues en particular los cuadrados son rectángulos de razón 1.</p>
+
+							<p>Hasta hace poco ni si quiera se sabía si esta conjetura era cierta para curvas suaves. En 2020 Joshua Evan Green y Andrew Lobb probaron que, en efecto, las curvas de Jordan suaves inscriben rectángulos de cualquier razón, su resultado fue publicado en Annals of Mathematics en 2021 (referencia 2). Para ello usaron que no existe un encaje lagrangiano de la botella de Klein en \(\mathbb{R}^4\). Poco después generalizaron bastante su resultado. Procediendo de manera similar demostraron que las curvas de Jordan suaves inscriben todo tipo de cuadriláteros cíclicos (cuadriláteros que se pueden inscribir en una circunferencia), es decir que si \(J\) es una curva de Jordan y \(C\) es un cuadrilátero cíclico entonces \(J\) admite al menos un cuadrilátero inscrito que es semejante a \(C\). </p>
+
+							<p>Otro caso en el que se sabe que ésta conjetura es cierta es cuando la curva es simétrica respecto a un punto (<a href="rectangulos_curvasSimetricas.html" target="_blank">ver detalles</a>).</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="card" style="background-color: #C1C9D3">
+					<div class="card-header" id="headingThree">
+						<h5 class="mb-0">
+							<button class="btn" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+								<h2>Rectángulos inscritos en otros continuos</h2>
+							</button>
+						</h5>
+					</div>
+
+					<div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+						<div class="card-body">
+							<p>Ya vimos que toda curva de Jordan \(\gamma: S^1 \to \mathbb{R}^2\) admite un rectángulo inscrito, i.e. que su imagen contiene los cuatro vértices de algún rectángulo. Podemos resumir esto diciendo que \(S^1\) inscribe rectángulos. Ahora, una pregunta natural es si esta propiedad es exclusiva de \(S^1\) o si habrá otros continuos del plano que también inscriban rectángulos. En otras palabras, ¿para qué continuos \(X\subset \mathbb{R}^2\) se cumple que todo encaje \(\gamma: X \to \mathbb{R}^2\) admite un rectángulo inscrito? o ¿para que continuos \(X\subset \mathbb{R}^2\) se cumple que sin importar cómo los deformemos (sin romper ni pegar) en el plano siempre contienen los cuatro vértices de algún rectángulo? </p>
+
+							<p>Por ejemplo, el arco \([0,1]\times \{0\}\) no inscribe rectángulos, pues a pesar de que hay maneras de deformarlo de modo que sí admita un rectángulo inscrito, existe una manera (de hecho infinitas maneras) de deformarlo de manera que no admita ningún rectángulo inscrito. Por ejemplo, dejándolo como está (con la función identidad) es un segmento recto, que claramente no admite ningún rectángulo inscrito.</p>
+
+							<p>Otro ejemplo de un continuo que no inscribe rectángulos es el triodo simple, pues existe un encaje (una manera de deformarlo en el plano) que no admite ningún rectángulo inscrito, por ejemplo cualquier encaje cuya imagen tenga la forma de la letra T.</p>
+
+							<p>Por otro lado, un ejemplo sencillo de un espacio que inscribe rectángulos es cualquier espacio con interior no vacío. Sin embargo, hay espacios para los que no es trivial determinar si inscriben rectángulos o no, por ejemplo, ¿será cierto que el espacio con forma de letra X inscribe rectángulos? o ¿el espacio con forma de letra H inscribirá rectángulos?</p>
+
+							<img id = "H4odo" src="imgs/4odoHrect.png">
+
+
+							<p>En 2020 Morales y Villanueva demostraron que si \(X\subset \mathbb{R}^2\) es un continuo que no inscribe rectángulos, i.e. que existe un encaje \(\gamma:X\to \mathbb{R}^2\) que no admite ningún rectángulo inscrito, entonces \(X\) es un arco (un espacio homeomorfo al intervalo [0,1]) o un triodo simple (un espacio homeomorfo al continuo con forma de letra T).</p> 
+
+							<p>Para ello procedieron de manera similar a Vaughan. Dado un continuo \(X\subset \mathbb{R}^2\) y un encaje \(\gamma: X \to \mathbb{R}^2\), pongamos \(Y=\gamma(X)\) y consideremos la función continua \(f_\gamma:F_2(Y) \to \mathbb{R}^3\) dada por 
+							$$f_\gamma(\{x,y\}) = \left( \frac{x+y}{2},d_e(x,y) \right) = \left( \frac{x_1 + y_1}{2},\frac{x_2 + y_2}{2},d_e(x,y) \right)$$
+							donde \(F_2(Y)\) es el espacio de subconjuntos de \(Y\) con a lo más dos puntos con la métrica de Hausdorff, conocido como el segundo producto simétrico de \(Y\). Notemos que esta es la misma función usada en la prueba para las curvas de Jordan, pero con diferente dominio, de modo que con un razonamiento similar llegamos a que si \(\gamma\) no admite ningún rectángulo inscrito entonces \(f_\gamma\) es inyectiva y por tanto \(F_2(Y)\) se puede encajar en \(\mathbb{R}^3\). Como \(F_2(X)\) y \(F_2(Y)\) son homeomorfos (pues \(X \cong Y\)) entonces \(F_2(X)\) también se puede encajar en \(\mathbb{R}^3\).
+							</p>
+
+							<p>En resumen, si un continuo \(X\) no inscribe rectángulos entonces su segundo producto simétrico, \(F_2(X)\), se puede encajar en \(\mathbb{R}^3\). Así, si queremos saber si un continuo plano \(X\) inscribe rectángulos, es conveniente ver si \(F_2(X)\) se puede meter en \(\mathbb{R}^3\). Este es un tema que ha sido estudiado ampliamente en la teoria de continuos e hiperespacios, y un resultado que es de particular interés para lo que estamos haciendo fue obtenido por E.Castañeda [referencia 5], el cual dice que si \(X\) es un continuo localmente conexo tal que su segundo producto simétrico se puede meter en \(\mathbb{R}^3\) entonces \(X\) se puede encajar en el continuo que tiene forma de 8 y por tanto debe ser homeomorfo a uno de los continuos de la siguiente imagen:</p>
+
+							<img id = "continuosDel8" src="imgs/continuosDel8.png">
+
+							<p>De esto se sigue que si \(X\) es un continuo plano localmente conexo que no inscribe rectángulos entonces su segundo producto simétrico se puede encajar en \(\mathbb{R}^3\) y por tanto debe ser homeomorfo a uno de los siete continuos de la imagen de arriba. Como \(S^1\) inscribe rectángulos, \(X\) no puede ser homeomorfo a ninguno de los continuos de la fila de arriba, pues cada uno de estos cuatro contiene una copia topológica de \(S^1\). Además, en [referencia 1] Morales y Villanueva probaron que el 4-odo simple también inscribe rectángulos, por lo que si un continuo plano localmente conexo no inscribe rectángulos entonces debe ser un arco o un triodo simple.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+
+		<section>
+
+			<div class="accordion" id="accordionExample" style="background-color: #C1C9D3; border-color: black">
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="headingO">
+						<button class="accordion-button" type="button" style="background-color: #C1C9D3" data-bs-toggle="collapse" data-bs-target="#collapseO" aria-expanded="true" aria-controls="collapseO">
+							<h2 style="color: black">Referencias</h2>
+						</button>
+					</h2>
+					<div id="collapseO" class="accordion-collapse collapse" style="background-color: #C1C9D3" aria-labelledby="headingO" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<ol>
+								<li>Benjamin Matschke, A survey on the square peg problem, Notices Amer. Math. Soc. 61 (2014), no. 4, 346352.</li>
+								<li>J. Greene and A. Lobb, The rectangular peg problem, Ann. of Math. (2) 194 (2021), no. 2, 509–517</li>
+								<li>J. Greene and A. Lobb, Cyclic quadrilaterals and smooth Jordan curves, arXiv:2011:05216 (2021)</li>
+								<li>Morales-Fuentes, Ulises; Villanueva-Segovia, Cristina, "Rectangles Inscribed in Locally Connected Plane Continua", Topology Proceedings, 58: 37–43 (2021)</li>
+								<li>Enrique Castañeda, Embedding symmetric products in Euclidean spaces in Continuum Theory (Denton, TX, 1999). Ed. Alejandro Illanes, Sergio Macías, and Wayne Lewis. Lecture Notes in Pure and Applied Mathematics, 230. New York: Dekker, 2002. 6779.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>	
+
+	</main>
+	<footer>
+		Copyright 2022
+		<a id = "poweredByMJ" href="https://www.mathjax.org">
+			<img title="Powered by MathJax" id = "poweredByMJimg"
+				 src="https://www.mathjax.org/badge/badge.gif"
+				 border="0" alt="Powered by MathJax" />
+		</a>
+		<a class="btn" style=" color:black; font-family: 'cmu_serifbold', sans-serif ; background-color: darkcyan" href="acercade.html" role="button">Acerca de nosotros</a>
+	</footer>
+</body>
+</html>
