@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="78d468f5-ebb1-408b-916e-788e1b4ae2ec" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/docs/acercade.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/acercade.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/css/estilo.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/estilo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/cuadrado.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/cuadrado.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/curvasConvexas.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/glosario.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/glosario.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/rectangulos.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/rectangulos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/triangulos.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/triangulos.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2HsMnva2rEZCrcyW7vWJuGjSFyJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/luisgarciaalbarran/Documents/GitHub/cuadradoinscrito.github.io&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="78d468f5-ebb1-408b-916e-788e1b4ae2ec" name="Changes" comment="" />
+      <created>1669069507815</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669069507815</updated>
+      <workItem from="1669069509905" duration="4760000" />
+      <workItem from="1669125905244" duration="4411000" />
+      <workItem from="1669481093047" duration="943000" />
+      <workItem from="1669734331084" duration="5124000" />
+      <workItem from="1669749707188" duration="767000" />
+      <workItem from="1669750605615" duration="39000" />
+      <workItem from="1670005857143" duration="8000" />
+      <workItem from="1670031808772" duration="2353000" />
+      <workItem from="1670355193109" duration="154000" />
+      <workItem from="1670355771450" duration="299000" />
+      <workItem from="1670358258697" duration="1000000" />
+      <workItem from="1670359690239" duration="211000" />
+      <workItem from="1670362495345" duration="532000" />
+      <workItem from="1671927179082" duration="318000" />
+      <workItem from="1672702495848" duration="1509000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

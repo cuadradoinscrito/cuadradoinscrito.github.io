@@ -24,7 +24,6 @@
 
 
 body{
-	background-color: #C1C9D3 ;
 	margin: 0%;
 	font-family: 'cmu_serifbold', sans-serif; 
 }
@@ -47,6 +46,7 @@ h1{
 	font-variant: small-caps;
 	font-size: 170%;
 	font-family: 'cmu_serifbold', sans-serif; 
+	margin-top: 5000%;
 }
 
 h2{
@@ -246,4 +246,73 @@ ol{
 	height: 35%;
 	margin-right: auto;
 	margin-left: auto;
+}
+
+.contenidoAnim{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+}
+
+.contenidoAnim figure{
+	position: relative;
+	height: 250px;
+	width: 300px;
+	overflow: hidden;
+	border-radius: 6px;
+	box-shadow: 0px 15px 25px rgba(0, 0 , 0, 0.50) ;
+	cursor: pointer;
+}
+
+.contenidoAnim figure img{
+	width: 100%;
+	height: 100%;
+	transition: all 500ms ease-out;
+}
+
+.contenidoAnim figure .capa{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(3, 139 , 139, 0.70);
+	transition: all 500ms ease-out;
+	opacity: 0;
+	visibility: hidden;
+	text-align: center;
+}
+
+.contenidoAnim figure:hover > .capa {
+	opacity: 1;
+	visibility: visible;
+}
+
+.contenidoAnim figure:hover > .capa h4{
+	margin-top: 30px;
+	margin-bottom: 12px;
+}
+
+.contenidoAnim figure .capa h4{
+	color: #FFFFFF;
+	transition: all 500ms ease-out;
+	font-family: 'cmu_serifbold', sans-serif; 
+
+}
+.contenidoAnim figure:hover > .capa a{
+	margin-bottom: 12px;
+}
+
+.contenidoAnim figure .capa a{
+	color: #FFFFFF;
+	transition: all 500ms ease-out;
+	font-family: 'cmu_serifbold', sans-serif; 
+	font-size: medium;
+
+}
+
+.carousel img{
+	margin: auto;
+	
 }
