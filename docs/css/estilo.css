@@ -314,5 +314,20 @@ ol{
 
 .carousel img{
 	margin: auto;
+}
+
+.carousel a button{
+	position: relative;
+	vertical-align: middle;
 	
+
+}
+
+.carousel h2{
+	font-family: 'cmu_serifroman';
+}
+
+.carousel p{
+	position: relative;
+	padding-top: 10%;
 }
