@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78d468f5-ebb1-408b-916e-788e1b4ae2ec" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/docs/acercade.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/acercade.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Menu.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/css/estilo.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/estilo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/cuadrado.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/cuadrado.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/curvasConvexas.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/glosario.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/glosario.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/rectangulos.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/rectangulos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/triangulos.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/triangulos.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +58,10 @@
       <workItem from="1670362495345" duration="532000" />
       <workItem from="1671927179082" duration="318000" />
       <workItem from="1672702495848" duration="1509000" />
+      <workItem from="1674762642703" duration="573000" />
+      <workItem from="1674769122535" duration="1210000" />
+      <workItem from="1675124137215" duration="9000" />
+      <workItem from="1675189536377" duration="316000" />
     </task>
     <servers />
   </component>
